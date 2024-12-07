@@ -1,0 +1,2082 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<title>SUIMARIO</title>
+	<meta name="robots" content="max-image-preview:large">
+
+
+
+	<style id="wp-emoji-styles-inline-css">
+		img.wp-smiley,
+		img.emoji {
+			display: inline !important;
+			border: none !important;
+			box-shadow: none !important;
+			height: 1em !important;
+			width: 1em !important;
+			margin: 0 0.07em !important;
+			vertical-align: -0.1em !important;
+			background: none !important;
+			padding: 0 !important;
+		}
+	</style>
+	<style id="ctc-term-title-style-inline-css">
+		.ctc-block-controls-dropdown .components-base-control__field {
+			margin: 0 !important
+		}
+	</style>
+	<style id="ctc-copy-button-style-inline-css">
+		.wp-block-ctc-copy-button {
+			font-size: 14px;
+			line-height: normal;
+			padding: 8px 16px;
+			border-width: 1px;
+			border-style: solid;
+			border-color: inherit;
+			border-radius: 4px;
+			cursor: pointer;
+			display: inline-block
+		}
+
+		.ctc-copy-button-textarea {
+			display: none !important
+		}
+	</style>
+	<style id="ctc-copy-icon-style-inline-css">
+		.wp-block-ctc-copy-icon .ctc-block-copy-icon {
+			background: rgba(0, 0, 0, 0);
+			padding: 0;
+			margin: 0;
+			position: relative;
+			cursor: pointer
+		}
+
+		.wp-block-ctc-copy-icon .ctc-block-copy-icon .check-icon {
+			display: none
+		}
+
+		.wp-block-ctc-copy-icon .ctc-block-copy-icon svg {
+			height: 1em;
+			width: 1em
+		}
+
+		.wp-block-ctc-copy-icon .ctc-block-copy-icon::after {
+			position: absolute;
+			content: attr(aria-label);
+			padding: .5em .75em;
+			right: 100%;
+			color: #fff;
+			background: #24292f;
+			font-size: 11px;
+			border-radius: 6px;
+			line-height: 1;
+			right: 100%;
+			bottom: 50%;
+			margin-right: 6px;
+			-webkit-transform: translateY(50%);
+			transform: translateY(50%)
+		}
+
+		.wp-block-ctc-copy-icon .ctc-block-copy-icon::before {
+			content: "";
+			top: 50%;
+			bottom: 50%;
+			left: -7px;
+			margin-top: -6px;
+			border: 6px solid rgba(0, 0, 0, 0);
+			border-left-color: #24292f;
+			position: absolute
+		}
+
+		.wp-block-ctc-copy-icon .ctc-block-copy-icon::after,
+		.wp-block-ctc-copy-icon .ctc-block-copy-icon::before {
+			opacity: 0;
+			visibility: hidden;
+			-webkit-transition: opacity .2s ease-in-out, visibility .2s ease-in-out;
+			transition: opacity .2s ease-in-out, visibility .2s ease-in-out
+		}
+
+		.wp-block-ctc-copy-icon .ctc-block-copy-icon.copied::after,
+		.wp-block-ctc-copy-icon .ctc-block-copy-icon.copied::before {
+			opacity: 1;
+			visibility: visible;
+			-webkit-transition: opacity .2s ease-in-out, visibility .2s ease-in-out;
+			transition: opacity .2s ease-in-out, visibility .2s ease-in-out
+		}
+
+		.wp-block-ctc-copy-icon .ctc-block-copy-icon.copied .check-icon {
+			display: inline-block
+		}
+
+		.wp-block-ctc-copy-icon .ctc-block-copy-icon.copied .copy-icon {
+			display: none !important
+		}
+
+		.ctc-copy-icon-textarea {
+			display: none !important
+		}
+	</style>
+	<style id="ctc-social-share-style-inline-css">
+		.wp-block-ctc-social-share {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			gap: 8px
+		}
+
+		.wp-block-ctc-social-share svg {
+			height: 16px;
+			width: 16px
+		}
+
+		.wp-block-ctc-social-share a {
+			display: -webkit-inline-box;
+			display: -ms-inline-flexbox;
+			display: inline-flex
+		}
+
+		.wp-block-ctc-social-share a:focus {
+			outline: none
+		}
+	</style>
+	<style id="classic-theme-styles-inline-css">
+		/*! This file is auto-generated */
+		.wp-block-button__link {
+			color: #fff;
+			background-color: #32373c;
+			border-radius: 9999px;
+			box-shadow: none;
+			text-decoration: none;
+			padding: calc(.667em + 2px) calc(1.333em + 2px);
+			font-size: 1.125em
+		}
+
+		.wp-block-file__button {
+			background: #32373c;
+			color: #fff;
+			text-decoration: none
+		}
+	</style>
+	<style id="global-styles-inline-css">
+		:root {
+			--wp--preset--aspect-ratio--square: 1;
+			--wp--preset--aspect-ratio--4-3: 4/3;
+			--wp--preset--aspect-ratio--3-4: 3/4;
+			--wp--preset--aspect-ratio--3-2: 3/2;
+			--wp--preset--aspect-ratio--2-3: 2/3;
+			--wp--preset--aspect-ratio--16-9: 16/9;
+			--wp--preset--aspect-ratio--9-16: 9/16;
+			--wp--preset--color--black: #000000;
+			--wp--preset--color--cyan-bluish-gray: #abb8c3;
+			--wp--preset--color--white: #ffffff;
+			--wp--preset--color--pale-pink: #f78da7;
+			--wp--preset--color--vivid-red: #cf2e2e;
+			--wp--preset--color--luminous-vivid-orange: #ff6900;
+			--wp--preset--color--luminous-vivid-amber: #fcb900;
+			--wp--preset--color--light-green-cyan: #7bdcb5;
+			--wp--preset--color--vivid-green-cyan: #00d084;
+			--wp--preset--color--pale-cyan-blue: #8ed1fc;
+			--wp--preset--color--vivid-cyan-blue: #0693e3;
+			--wp--preset--color--vivid-purple: #9b51e0;
+			--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+			--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+			--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+			--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+			--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+			--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+			--wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+			--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+			--wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+			--wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+			--wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+			--wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+			--wp--preset--font-size--small: 13px;
+			--wp--preset--font-size--medium: 20px;
+			--wp--preset--font-size--large: 36px;
+			--wp--preset--font-size--x-large: 42px;
+			--wp--preset--spacing--20: 0.44rem;
+			--wp--preset--spacing--30: 0.67rem;
+			--wp--preset--spacing--40: 1rem;
+			--wp--preset--spacing--50: 1.5rem;
+			--wp--preset--spacing--60: 2.25rem;
+			--wp--preset--spacing--70: 3.38rem;
+			--wp--preset--spacing--80: 5.06rem;
+			--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+			--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+			--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+			--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+			--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+		}
+
+		:where(.is-layout-flex) {
+			gap: 0.5em;
+		}
+
+		:where(.is-layout-grid) {
+			gap: 0.5em;
+		}
+
+		body .is-layout-flex {
+			display: flex;
+		}
+
+		.is-layout-flex {
+			flex-wrap: wrap;
+			align-items: center;
+		}
+
+		.is-layout-flex> :is(*, div) {
+			margin: 0;
+		}
+
+		body .is-layout-grid {
+			display: grid;
+		}
+
+		.is-layout-grid> :is(*, div) {
+			margin: 0;
+		}
+
+		:where(.wp-block-columns.is-layout-flex) {
+			gap: 2em;
+		}
+
+		:where(.wp-block-columns.is-layout-grid) {
+			gap: 2em;
+		}
+
+		:where(.wp-block-post-template.is-layout-flex) {
+			gap: 1.25em;
+		}
+
+		:where(.wp-block-post-template.is-layout-grid) {
+			gap: 1.25em;
+		}
+
+		.has-black-color {
+			color: var(--wp--preset--color--black) !important;
+		}
+
+		.has-cyan-bluish-gray-color {
+			color: var(--wp--preset--color--cyan-bluish-gray) !important;
+		}
+
+		.has-white-color {
+			color: var(--wp--preset--color--white) !important;
+		}
+
+		.has-pale-pink-color {
+			color: var(--wp--preset--color--pale-pink) !important;
+		}
+
+		.has-vivid-red-color {
+			color: var(--wp--preset--color--vivid-red) !important;
+		}
+
+		.has-luminous-vivid-orange-color {
+			color: var(--wp--preset--color--luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-amber-color {
+			color: var(--wp--preset--color--luminous-vivid-amber) !important;
+		}
+
+		.has-light-green-cyan-color {
+			color: var(--wp--preset--color--light-green-cyan) !important;
+		}
+
+		.has-vivid-green-cyan-color {
+			color: var(--wp--preset--color--vivid-green-cyan) !important;
+		}
+
+		.has-pale-cyan-blue-color {
+			color: var(--wp--preset--color--pale-cyan-blue) !important;
+		}
+
+		.has-vivid-cyan-blue-color {
+			color: var(--wp--preset--color--vivid-cyan-blue) !important;
+		}
+
+		.has-vivid-purple-color {
+			color: var(--wp--preset--color--vivid-purple) !important;
+		}
+
+		.has-black-background-color {
+			background-color: var(--wp--preset--color--black) !important;
+		}
+
+		.has-cyan-bluish-gray-background-color {
+			background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+		}
+
+		.has-white-background-color {
+			background-color: var(--wp--preset--color--white) !important;
+		}
+
+		.has-pale-pink-background-color {
+			background-color: var(--wp--preset--color--pale-pink) !important;
+		}
+
+		.has-vivid-red-background-color {
+			background-color: var(--wp--preset--color--vivid-red) !important;
+		}
+
+		.has-luminous-vivid-orange-background-color {
+			background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-amber-background-color {
+			background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+		}
+
+		.has-light-green-cyan-background-color {
+			background-color: var(--wp--preset--color--light-green-cyan) !important;
+		}
+
+		.has-vivid-green-cyan-background-color {
+			background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+		}
+
+		.has-pale-cyan-blue-background-color {
+			background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+		}
+
+		.has-vivid-cyan-blue-background-color {
+			background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+		}
+
+		.has-vivid-purple-background-color {
+			background-color: var(--wp--preset--color--vivid-purple) !important;
+		}
+
+		.has-black-border-color {
+			border-color: var(--wp--preset--color--black) !important;
+		}
+
+		.has-cyan-bluish-gray-border-color {
+			border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+		}
+
+		.has-white-border-color {
+			border-color: var(--wp--preset--color--white) !important;
+		}
+
+		.has-pale-pink-border-color {
+			border-color: var(--wp--preset--color--pale-pink) !important;
+		}
+
+		.has-vivid-red-border-color {
+			border-color: var(--wp--preset--color--vivid-red) !important;
+		}
+
+		.has-luminous-vivid-orange-border-color {
+			border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-amber-border-color {
+			border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+		}
+
+		.has-light-green-cyan-border-color {
+			border-color: var(--wp--preset--color--light-green-cyan) !important;
+		}
+
+		.has-vivid-green-cyan-border-color {
+			border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+		}
+
+		.has-pale-cyan-blue-border-color {
+			border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+		}
+
+		.has-vivid-cyan-blue-border-color {
+			border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+		}
+
+		.has-vivid-purple-border-color {
+			border-color: var(--wp--preset--color--vivid-purple) !important;
+		}
+
+		.has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+			background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+		}
+
+		.has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+			background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+		}
+
+		.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+			background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-orange-to-vivid-red-gradient-background {
+			background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+		}
+
+		.has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+			background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+		}
+
+		.has-cool-to-warm-spectrum-gradient-background {
+			background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+		}
+
+		.has-blush-light-purple-gradient-background {
+			background: var(--wp--preset--gradient--blush-light-purple) !important;
+		}
+
+		.has-blush-bordeaux-gradient-background {
+			background: var(--wp--preset--gradient--blush-bordeaux) !important;
+		}
+
+		.has-luminous-dusk-gradient-background {
+			background: var(--wp--preset--gradient--luminous-dusk) !important;
+		}
+
+		.has-pale-ocean-gradient-background {
+			background: var(--wp--preset--gradient--pale-ocean) !important;
+		}
+
+		.has-electric-grass-gradient-background {
+			background: var(--wp--preset--gradient--electric-grass) !important;
+		}
+
+		.has-midnight-gradient-background {
+			background: var(--wp--preset--gradient--midnight) !important;
+		}
+
+		.has-small-font-size {
+			font-size: var(--wp--preset--font-size--small) !important;
+		}
+
+		.has-medium-font-size {
+			font-size: var(--wp--preset--font-size--medium) !important;
+		}
+
+		.has-large-font-size {
+			font-size: var(--wp--preset--font-size--large) !important;
+		}
+
+		.has-x-large-font-size {
+			font-size: var(--wp--preset--font-size--x-large) !important;
+		}
+
+		:where(.wp-block-post-template.is-layout-flex) {
+			gap: 1.25em;
+		}
+
+		:where(.wp-block-post-template.is-layout-grid) {
+			gap: 1.25em;
+		}
+
+		:where(.wp-block-columns.is-layout-flex) {
+			gap: 2em;
+		}
+
+		:where(.wp-block-columns.is-layout-grid) {
+			gap: 2em;
+		}
+
+		:root :where(.wp-block-pullquote) {
+			font-size: 1.5em;
+			line-height: 1.6;
+		}
+	</style>
+	<link rel="stylesheet" id="ctc-copy-inline-css" href="css/copy-inline.css" media="all">
+	<link rel="stylesheet" id="hello-elementor-css" href="css/style.min.css" media="all">
+	<link rel="stylesheet" id="hello-elementor-theme-style-css" href="css/theme.min.css" media="all">
+	<link rel="stylesheet" id="hello-elementor-header-footer-css" href="css/header-footer.min.css" media="all">
+	<link rel="stylesheet" id="elementor-frontend-css" href="css/frontend.min.css" media="all">
+	<link rel="stylesheet" id="elementor-post-8-css" href="css/post-8.css" media="all">
+	<link rel="stylesheet" id="elementor-icons-css" href="css/elementor-icons.min.css" media="all">
+	<link rel="stylesheet" id="swiper-css" href="css/swiper.min.css" media="all">
+	<link rel="stylesheet" id="e-swiper-css" href="css/e-swiper.min.css" media="all">
+	<link rel="stylesheet" id="elementor-pro-css" href="css/frontend.min_1.css" media="all">
+	<link rel="stylesheet" id="elementor-global-css" href="css/global.css" media="all">
+	<link rel="stylesheet" id="widget-image-css" href="css/widget-image.min.css" media="all">
+	<link rel="stylesheet" id="e-animation-shrink-css" href="css/e-animation-shrink.min.css" media="all">
+	<link rel="stylesheet" id="widget-heading-css" href="css/widget-heading.min.css" media="all">
+	<link rel="stylesheet" id="widget-social-icons-css" href="css/widget-social-icons.min.css" media="all">
+	<link rel="stylesheet" id="e-apple-webkit-css" href="css/apple-webkit.min.css" media="all">
+	<link rel="stylesheet" id="widget-icon-list-css" href="css/widget-icon-list.min.css" media="all">
+	<link rel="stylesheet" id="widget-image-box-css" href="css/widget-image-box.min.css" media="all">
+	<link rel="stylesheet" id="widget-icon-box-css" href="css/widget-icon-box.min.css" media="all">
+	<link rel="stylesheet" id="elementor-post-10-css" href="css/post-10.css" media="all">
+	<link rel="stylesheet" id="google-fonts-1-css" href="css/css.css" media="all">
+	<link rel="stylesheet" id="elementor-icons-shared-0-css" href="css/fontawesome.min.css" media="all">
+	<link rel="stylesheet" id="elementor-icons-fa-solid-css" href="css/solid.min.css" media="all">
+	<link rel="stylesheet" id="elementor-icons-fa-brands-css" href="css/brands.min.css" media="all">
+	<link rel="stylesheet" id="elementor-icons-fa-regular-css" href="css/regular.min.css" media="all">
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+	<script src="js/jquery.min.js" id="jquery-core-js"></script>
+	<script src="js/jquery-migrate.min.js" id="jquery-migrate-js"></script>
+	<script src="js/frontend.js" id="ctc-copy-button-script-2-js"></script>
+	<script src="js/frontend_1.js" id="ctc-copy-icon-script-2-js"></script>
+
+
+
+
+	<meta name="generator"
+		content="Elementor 3.24.4; features: additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
+	<style>
+		.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+		.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+			background-image: none !important;
+		}
+
+		@media screen and (max-height: 1024px) {
+
+			.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+			.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+				background-image: none !important;
+			}
+		}
+
+		@media screen and (max-height: 640px) {
+
+			.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+			.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+				background-image: none !important;
+			}
+		}
+	</style>
+	<link rel="icon" href="images/fav.webp" sizes="32x32">
+	<link rel="icon" href="images/fav.webp" sizes="192x192">
+	<link rel="apple-touch-icon" href="images/fav.webp">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+</head>
+
+<body
+	class="home page-template page-template-elementor_canvas page page-id-10 elementor-default elementor-template-canvas elementor-kit-8 elementor-page elementor-page-10">
+	<div data-elementor-type="wp-page" data-elementor-id="10" class="elementor elementor-10"
+		data-elementor-post-type="page">
+		<div class="elementor-element elementor-element-ef64b53 e-con-full jr-scrolling-image e-flex e-con e-parent"
+			data-id="ef64b53" data-element_type="container"
+			data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-element elementor-element-a6d80f3 elementor-hidden-desktop elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-html"
+				data-id="a6d80f3" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+					<script src="js/jquery-3.6.0.min.js"></script>
+					<script>
+
+						var $ = jQuery,
+							html = [],
+							prevWidth
+
+						/* Set aspect ratio option */
+
+						function setAspectRatio(el) {
+							if (el.css('--image-aspect-ratio') && el.css('--image-aspect-ratio').trim() == 'true') {
+								el.addClass('image-aspect-ratio')
+							} else {
+								el.removeClass('image-aspect-ratio')
+							}
+						}
+
+
+						/* Get initial summation images width */
+
+						function getInitialWidth(el) {
+
+							var width = 0,
+								space = parseFloat(el.css('gap'))
+
+							el.find('.elementor-widget').each(function () {
+								width += $(this).width() + space
+							})
+
+							return width
+						}
+
+
+						/* Set new container width and other values */
+
+						function setValues(el, width, indexI, indexJ) {
+							var ratio = Math.ceil(el.parent().width() / width),
+								total = ratio + 1
+
+							for (i = 0; i < ratio; i++) {
+								el.append(html[indexI][indexJ])
+							}
+							el.width(width * total)
+							el.css('--total', total)
+							el.css('--est-speed', width / 100)
+						}
+
+
+						/* Set direction option */
+
+						function setDirection(el, width) {
+							if (el.css('--direction') == -1) {
+								el.css('margin-left', -1 * width + 'px')
+							}
+						}
+
+
+						/* Set pause on hover option */
+
+						function setPauseOnHover(el) {
+							var pauseOnHover = $(window).width() > 767 ? '--pause-on-hover' : '--pause-on-hover-mobile'
+
+							if (el.css(pauseOnHover) && el.css(pauseOnHover).trim() == 'true') {
+								el.css('--poh', 'paused')
+							} else {
+								el.css('--poh', 'running')
+							}
+						}
+
+						$(document).ready(function () {
+
+							prevWidth = $(window).width()
+
+							$('.jr-scrolling-image').each(function (indexI) {
+								html[indexI] = []
+								$(this).find('.e-con, .e-container').each(function (indexJ) {
+
+									setAspectRatio($(this))
+
+									var width = getInitialWidth($(this))
+
+									html[indexI].push($(this).html())
+									if (width) {
+										setValues($(this), width, indexI, indexJ)
+										setDirection($(this), width)
+									}
+									setPauseOnHover($(this))
+
+								})
+
+								$(this).addClass('showing')
+
+							})
+
+						})
+
+						$(window).on('resize', function () {
+
+							if ($(window).width() == prevWidth) {
+								return
+							}
+							prevWidth = $(window).width()
+
+							$('.jr-scrolling-image').each(function (indexI) {
+								$(this).find('.e-con, .e-container').each(function (indexJ) {
+
+									$(this).empty()
+									$(this).append(html[indexI][indexJ])
+
+									var width = getInitialWidth($(this))
+									if (width) {
+										setValues($(this), width, indexI, indexJ)
+										setDirection($(this), width)
+									}
+									setPauseOnHover($(this))
+
+								})
+							})
+						})
+
+					</script>
+				</div>
+			</div>
+			<div class="elementor-element elementor-element-6358e13 e-con-full e-flex e-con e-child" data-id="6358e13"
+				data-element_type="container">
+				<div class="elementor-element elementor-element-309a77e elementor-widget elementor-widget-image"
+					data-id="309a77e" data-element_type="widget" data-widget_type="image.default">
+					<div class="elementor-widget-container">
+						<img fetchpriority="high" decoding="async" width="500" height="102" src="images/2.png"
+							class="attachment-full size-full wp-image-460" alt sizes="(max-width: 500px) 100vw, 500px">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="elementor-element elementor-element-5646eca e-flex e-con-boxed e-con e-parent" data-id="5646eca"
+			data-element_type="container">
+			<div class="e-con-inner">
+				<div class="elementor-element elementor-element-347f761 e-con-full e-flex e-con e-child"
+					data-id="347f761" data-element_type="container"
+					data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="elementor-element elementor-element-b4ed300 elementor-widget elementor-widget-image"
+						data-id="b4ed300" data-element_type="widget" data-widget_type="image.default">
+						<div class="elementor-widget-container">
+							<a href="#">
+								<img fetchpriority="high" decoding="async" width="500" height="102" src="images/2.png"
+									class="attachment-full size-full wp-image-460" alt
+									sizes="(max-width: 500px) 100vw, 500px"> </a>
+						</div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-36432ec e-con-full e-flex e-con e-child"
+					data-id="36432ec" data-element_type="container"
+					data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="elementor-element elementor-element-35fb439 elementor-nav-menu--stretch elementor-nav-menu__text-align-center elementor-nav-menu--dropdown-tablet elementor-nav-menu--toggle elementor-nav-menu--burger elementor-widget elementor-widget-nav-menu"
+						data-id="35fb439" data-element_type="widget"
+						data-settings="{&quot;full_width&quot;:&quot;stretch&quot;,&quot;toggle_icon_hover_animation&quot;:&quot;shrink&quot;,&quot;layout&quot;:&quot;horizontal&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;i class=\&quot;fas fa-caret-down\&quot;&gt;&lt;\/i&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;},&quot;toggle&quot;:&quot;burger&quot;}"
+						data-widget_type="nav-menu.default">
+						<div class="elementor-widget-container">
+							<nav aria-label="Menu"
+								class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-none">
+								<ul id="menu-1-35fb439" class="elementor-nav-menu">
+									<li
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-10 current_page_item menu-item-145">
+										<a href="" aria-current="page"
+											class="elementor-item elementor-item-active">Home</a>
+									</li>
+									<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-146"><a
+											href="#about" class="elementor-item elementor-item-anchor">About</a></li>
+									<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-682"><a
+											href="#roadmap" class="elementor-item elementor-item-anchor">Roadmap</a>
+									</li>
+									<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-148"><a
+											href="#tokenomics"
+											class="elementor-item elementor-item-anchor">Tokenomics</a></li>
+									<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-147"><a
+											href="#buy" class="elementor-item elementor-item-anchor">How To Buy</a></li>
+								</ul>
+							</nav>
+							<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle"
+								aria-expanded="false">
+								<img src="./images/BlueMove_logo.webp" style="width: 50px;border-radius: 50%;" alt=""
+									srcset="">
+								<i aria-hidden="true" role="presentation"
+									class="elementor-menu-toggle__icon--close elementor-animation-shrink eicon-close"></i>
+								<span class="elementor-screen-only">Menu</span>
+							</div>
+							<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
+								<ul id="menu-2-35fb439" class="elementor-nav-menu">
+									<li
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-10 current_page_item menu-item-145">
+										<a href="" aria-current="page" class="elementor-item elementor-item-active"
+											tabindex="-1">Home</a>
+									</li>
+									<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-146"><a
+											href="#about" class="elementor-item elementor-item-anchor"
+											tabindex="-1">About</a></li>
+									<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-682"><a
+											href="#roadmap" class="elementor-item elementor-item-anchor"
+											tabindex="-1">Roadmap</a></li>
+									<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-148"><a
+											href="#tokenomics" class="elementor-item elementor-item-anchor"
+											tabindex="-1">Tokenomics</a></li>
+									<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-147"><a
+											href="#buy" class="elementor-item elementor-item-anchor" tabindex="-1">How
+											To Buy</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-dc86537 e-con-full e-flex e-con e-child"
+					data-id="dc86537" data-element_type="container">
+					<div class="elementor-element elementor-element-90a1c02 elementor-align-center elementor-widget elementor-widget-button"
+						data-id="90a1c02" data-element_type="widget" data-widget_type="button.default">
+						<div class="elementor-widget-container">
+							<div class="elementor-button-wrapper">
+								<a class="elementor-button elementor-button-link elementor-size-sm"
+									href="https://movepump.com/token/0xb72688e4685bee43f0dc24c5408646b0a9ef14ed655f8d4b25b0599dc75d2640::mario::MARIO">
+									<span class="elementor-button-content-wrapper">
+										<span class="elementor-button-text">buy now</span>
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="elementor-element elementor-element-4845635 e-con-full e-flex e-con e-parent" data-id="4845635"
+			data-element_type="container"
+			data-settings="{&quot;background_background&quot;:&quot;video&quot;,&quot;background_video_link&quot;:&quot;https:\/\/vimeo.com\/1009392145?share=copy&quot;,&quot;background_play_on_mobile&quot;:&quot;yes&quot;}">
+			<div class="elementor-background-video-container">
+				<div class="elementor-background-video-embed"></div>
+			</div>
+			<div class="elementor-element elementor-element-fdf4ba4 elementor-widget elementor-widget-heading"
+				data-id="fdf4ba4" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">CONQUER THE SUI WITH</h2>
+				</div>
+			</div>
+			<div class="elementor-element elementor-element-e9a7c27 elementor-widget elementor-widget-image"
+				data-id="e9a7c27" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<img decoding="async" width="931" height="166" src="images/1.png"
+						class="attachment-full size-full wp-image-202" alt sizes="(max-width: 931px) 100vw, 931px">
+				</div>
+			</div>
+			<div class="elementor-element elementor-element-5216b8a elementor-widget elementor-widget-heading"
+				data-id="5216b8a" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">THE LEGENDARY HERO OF THE GALAXY</h2>
+				</div>
+			</div>
+			<div class="elementor-element elementor-element-97318ad e-con-full e-flex e-con e-child" data-id="97318ad"
+				data-element_type="container">
+				<div class="elementor-element elementor-element-e8e0e7d elementor-widget elementor-widget-button"
+					data-id="e8e0e7d" data-element_type="widget" data-widget_type="button.default">
+					<div class="elementor-widget-container">
+						<div class="elementor-button-wrapper">
+							<a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-shrink"
+								href="https://movepump.com/token/0xb72688e4685bee43f0dc24c5408646b0a9ef14ed655f8d4b25b0599dc75d2640::mario::MARIO">
+								<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">buy now</span>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-58dfa84 elementor-widget elementor-widget-button"
+					data-id="58dfa84" data-element_type="widget" data-widget_type="button.default">
+					<div class="elementor-widget-container">
+						<div class="elementor-button-wrapper">
+							<a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-shrink"
+								href="https://movepump.com/token/0xb72688e4685bee43f0dc24c5408646b0a9ef14ed655f8d4b25b0599dc75d2640::mario::MARIO">
+								<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">chart</span>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="elementor-element elementor-element-26b87d0 e-con-full elementor-hidden-mobile e-flex e-con e-child"
+				data-id="26b87d0" data-element_type="container"
+				data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;position&quot;:&quot;absolute&quot;}">
+				<div class="elementor-element elementor-element-c0c0692 elementor-shape-rounded elementor-grid-0 e-grid-align-center elementor-widget elementor-widget-social-icons"
+					data-id="c0c0692" data-element_type="widget" data-widget_type="social-icons.default">
+					<div class="elementor-widget-container">
+						<div class="elementor-social-icons-wrapper elementor-grid">
+							<span class="elementor-grid-item">
+								<a class="elementor-icon elementor-social-icon elementor-social-icon-telegram-plane elementor-repeater-item-8e0e422"
+									href="https://t.me/Mario_Sui" target="_blank">
+									<span class="elementor-screen-only">Telegram-plane</span>
+									<i class="fab fa-telegram-plane"></i> </a>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-26dcd45 elementor-shape-rounded elementor-grid-0 e-grid-align-center elementor-widget elementor-widget-social-icons"
+					data-id="26dcd45" data-element_type="widget" data-widget_type="social-icons.default">
+					<div class="elementor-widget-container">
+						<div class="elementor-social-icons-wrapper elementor-grid">
+							<span class="elementor-grid-item">
+								<a class="elementor-icon elementor-social-icon elementor-social-icon-x-twitter elementor-repeater-item-a6268a0"
+									href="https://x.com/Sui_Mario" target="_blank">
+									<span class="elementor-screen-only">X-twitter</span>
+									<i class="fab fa-x-twitter"></i> </a>
+							</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="elementor-element elementor-element-d3aa69b elementor-shape-rounded elementor-grid-0 e-grid-align-center elementor-widget elementor-widget-social-icons"
+					data-id="d3aa69b" data-element_type="widget" data-widget_type="social-icons.default">
+					<div class="elementor-widget-container">
+						<div class="elementor-social-icons-wrapper elementor-grid">
+							<span class="elementor-grid-item">
+								<a class="elementor-icon elementor-social-icon elementor-social-icon- elementor-repeater-item-a6268a0"
+									target="_blank">
+									<span class="elementor-screen-only"></span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="#fff"
+										fill-rule="evenodd" viewBox="0 0 252 300" class="chakra-icon custom-euf446">
+										<path
+											d="M151.818 106.866c9.177-4.576 20.854-11.312 32.545-20.541 2.465 5.119 2.735 9.586 1.465 13.193-.9 2.542-2.596 4.753-4.826 6.512-2.415 1.901-5.431 3.285-8.765 4.033-6.326 1.425-13.712.593-20.419-3.197m1.591 46.886l12.148 7.017c-24.804 13.902-31.547 39.716-39.557 64.859-8.009-25.143-14.753-50.957-39.556-64.859l12.148-7.017a5.95 5.95 0 003.84-5.845c-1.113-23.547 5.245-33.96 13.821-40.498 3.076-2.342 6.434-3.518 9.747-3.518s6.671 1.176 9.748 3.518c8.576 6.538 14.934 16.951 13.821 40.498a5.95 5.95 0 003.84 5.845zM126 0c14.042.377 28.119 3.103 40.336 8.406 8.46 3.677 16.354 8.534 23.502 14.342 3.228 2.622 5.886 5.155 8.814 8.071 7.897.273 19.438-8.5 24.796-16.709-9.221 30.23-51.299 65.929-80.43 79.589-.012-.005-.02-.012-.029-.018-5.228-3.992-11.108-5.988-16.989-5.988s-11.76 1.996-16.988 5.988c-.009.005-.017.014-.029.018-29.132-13.66-71.209-49.359-80.43-79.589 5.357 8.209 16.898 16.982 24.795 16.709 2.929-2.915 5.587-5.449 8.814-8.071C69.31 16.94 77.204 12.083 85.664 8.406 97.882 3.103 111.959.377 126 0m-25.818 106.866c-9.176-4.576-20.854-11.312-32.544-20.541-2.465 5.119-2.735 9.586-1.466 13.193.901 2.542 2.597 4.753 4.826 6.512 2.416 1.901 5.432 3.285 8.766 4.033 6.326 1.425 13.711.593 20.418-3.197" />
+										<path
+											d="M197.167 75.016c6.436-6.495 12.107-13.684 16.667-20.099l2.316 4.359c7.456 14.917 11.33 29.774 11.33 46.494l-.016 26.532.14 13.754c.54 33.766 7.846 67.929 24.396 99.193l-34.627-27.922-24.501 39.759-25.74-24.231L126 299.604l-41.132-66.748-25.739 24.231-24.501-39.759L0 245.25c16.55-31.264 23.856-65.427 24.397-99.193l.14-13.754-.016-26.532c0-16.721 3.873-31.578 11.331-46.494l2.315-4.359c4.56 6.415 10.23 13.603 16.667 20.099l-2.01 4.175c-3.905 8.109-5.198 17.176-2.156 25.799 1.961 5.554 5.54 10.317 10.154 13.953 4.48 3.531 9.782 5.911 15.333 7.161 3.616.814 7.3 1.149 10.96 1.035-.854 4.841-1.227 9.862-1.251 14.978L53.2 160.984l25.206 14.129a41.926 41.926 0 015.734 3.869c20.781 18.658 33.275 73.855 41.861 100.816 8.587-26.961 21.08-82.158 41.862-100.816a41.865 41.865 0 015.734-3.869l25.206-14.129-32.665-18.866c-.024-5.116-.397-10.137-1.251-14.978 3.66.114 7.344-.221 10.96-1.035 5.551-1.25 10.854-3.63 15.333-7.161 4.613-3.636 8.193-8.399 10.153-13.953 3.043-8.623 1.749-17.689-2.155-25.799l-2.01-4.175z" />
+									</svg> </a>
+							</span>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="elementor-element elementor-element-e08ac32 e-con-full elementor-hidden-desktop elementor-hidden-tablet e-flex e-con e-child"
+				data-id="e08ac32" data-element_type="container"
+				data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-74c6bf2 elementor-shape-rounded elementor-grid-0 e-grid-align-center elementor-widget elementor-widget-social-icons"
+					data-id="74c6bf2" data-element_type="widget" data-widget_type="social-icons.default">
+					<div class="elementor-widget-container">
+						<div class="elementor-social-icons-wrapper elementor-grid">
+							<span class="elementor-grid-item">
+								<a class="elementor-icon elementor-social-icon elementor-social-icon-telegram-plane elementor-repeater-item-a6268a0"
+									target="_blank">
+									<span class="elementor-screen-only">Telegram-plane</span>
+									<i class="fab fa-telegram-plane"></i> </a>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-8124122 elementor-shape-rounded elementor-grid-0 e-grid-align-center elementor-widget elementor-widget-social-icons"
+					data-id="8124122" data-element_type="widget" data-widget_type="social-icons.default">
+					<div class="elementor-widget-container">
+						<div class="elementor-social-icons-wrapper elementor-grid">
+							<span class="elementor-grid-item">
+								<a class="elementor-icon elementor-social-icon elementor-social-icon-x-twitter elementor-repeater-item-a6268a0"
+									target="_blank">
+									<span class="elementor-screen-only">X-twitter</span>
+									<i class="fab fa-x-twitter"></i> </a>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-66e8532 elementor-shape-rounded elementor-grid-0 e-grid-align-center elementor-widget elementor-widget-social-icons"
+					data-id="66e8532" data-element_type="widget" data-widget_type="social-icons.default">
+					<div class="elementor-widget-container">
+						<div class="elementor-social-icons-wrapper elementor-grid">
+							<span class="elementor-grid-item">
+								<a class="elementor-icon elementor-social-icon elementor-social-icon- elementor-repeater-item-a6268a0"
+									target="_blank">
+									<span class="elementor-screen-only"></span>
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 714 718" width="100"
+										height="101">
+										<title>Move pump-svg</title>
+										<style>
+											.s0 {
+												fill: #fbfbf7
+											}
+
+											.s1 {
+												fill: #05beac
+											}
+
+											.s2 {
+												fill: #f5b93b
+											}
+
+											.s3 {
+												fill: #000000
+											}
+
+											.s4 {
+												fill: #f2b24a
+											}
+
+											.s5 {
+												fill: #f89a49
+											}
+
+											.s6 {
+												fill: #f89b48
+											}
+
+											.s7 {
+												fill: #f99149
+											}
+
+											.s8 {
+												fill: #f8904b
+											}
+
+											.s9 {
+												fill: #fdfdfb
+											}
+
+											.s10 {
+												fill: #f2b34b
+											}
+
+											.s11 {
+												fill: #f4a74e
+											}
+
+											.s12 {
+												fill: #f99f52
+											}
+
+											.s13 {
+												fill: #faf8f1
+											}
+
+											.s14 {
+												fill: #fbfbf4
+											}
+
+											.s15 {
+												fill: #fbfaf3
+											}
+
+											.s16 {
+												fill: #fcfbf7
+											}
+
+											.s17 {
+												fill: #f3b549
+											}
+
+											.s18 {
+												fill: #f7a14c
+											}
+
+											.s19 {
+												fill: #f4af48
+											}
+
+											.s20 {
+												fill: #f9904b
+											}
+
+											.s21 {
+												fill: #f9934a
+											}
+
+											.s22 {
+												fill: #f7a049
+											}
+
+											.s23 {
+												fill: #f9944c
+											}
+
+											.s24 {
+												fill: #f4ae49
+											}
+
+											.s25 {
+												fill: #fbf9f4
+											}
+
+											.s26 {
+												fill: #fafaf6
+											}
+
+											.s27 {
+												fill: #faf9f4
+											}
+
+											.s28 {
+												fill: #f4ae4e
+											}
+
+											.s29 {
+												fill: #f9f8f4
+											}
+
+											.s30 {
+												fill: #fbf9f6
+											}
+
+											.s31 {
+												fill: #faf8f5
+											}
+
+											.s32 {
+												fill: #f3b64f
+											}
+
+											.s33 {
+												fill: #f2af4a
+											}
+
+											.s34 {
+												fill: #faf7f2
+											}
+
+											.s35 {
+												fill: #f2b24f
+											}
+
+											.s36 {
+												fill: #f3af4d
+											}
+
+											.s37 {
+												fill: #f6934c
+											}
+
+											.s38 {
+												fill: #f4a34f
+											}
+
+											.s39 {
+												fill: #f49f4f
+											}
+
+											.s40 {
+												fill: #f4a84e
+											}
+
+											.s41 {
+												fill: #f6954c
+											}
+
+											.s42 {
+												fill: #f89251
+											}
+
+											.s43 {
+												fill: #f3ae4e
+											}
+
+											.s44 {
+												fill: #f4a756
+											}
+
+											.s45 {
+												fill: #f2b34c
+											}
+
+											.s46 {
+												fill: #f3ac4d
+											}
+
+											.s47 {
+												fill: #f3aa53
+											}
+
+											.s48 {
+												fill: #f1b24a
+											}
+
+											.s49 {
+												fill: #f0b44e
+											}
+
+											.s50 {
+												fill: #e1c771
+											}
+
+											.s51 {
+												fill: #8ec077
+											}
+
+											.s52 {
+												fill: #f1b44d
+											}
+
+											.s53 {
+												fill: #f2a94f
+											}
+
+											.s54 {
+												fill: #f1b057
+											}
+
+											.s55 {
+												fill: #ecd08f
+											}
+
+											.s56 {
+												fill: #eba262
+											}
+
+											.s57 {
+												fill: #e7a160
+											}
+
+											.s58 {
+												fill: #eda56a
+											}
+
+											.s59 {
+												fill: #e89855
+											}
+
+											.s60 {
+												fill: #e89b67
+											}
+
+											.s61 {
+												fill: #ea955c
+											}
+
+											.s62 {
+												fill: #e79e6b
+											}
+
+											.s63 {
+												fill: #f9a55d
+											}
+
+											.s64 {
+												fill: #e69663
+											}
+
+											.s65 {
+												fill: #66c7bc
+											}
+
+											.s66 {
+												fill: #43c4b6
+											}
+
+											.s67 {
+												fill: #f4ab5d
+											}
+
+											.s68 {
+												fill: #8ce3db
+											}
+
+											.s69 {
+												fill: #f6dc97
+											}
+
+											.s70 {
+												fill: #f0ce7e
+											}
+										</style>
+										<path class="s0"
+											d="m507 37q1.4 0.6 2.7 1.3c31.4 14.8 60.1 34.3 85.4 58q3 2.8 6 5.5c6.4 5.7 12.2 11.7 17.9 18.2q1 1.1 2.1 2.3c7.2 7.7 13.6 16.2 19.9 24.7q0.7 0.9 1.3 1.8c33.9 45.2 55.1 98.8 63.5 154.5q0.2 1.1 0.3 2.1c1.9 12.3 3 24.5 3.1 37q0 1.5 0 3.1 0 5 0 10.1c0.1 1.7 0.1 1.7 0.1 3.4-0.1 16.9-0.5 33.3-3.3 50-0.3 1.6-0.3 1.6-0.5 3.3-5.7 35.5-16.6 69.4-32.5 101.7q-0.6 1.3-1.3 2.6c-8.6 17.4-19.1 33.8-30.7 49.4q-0.6 0.8-1.2 1.6c-9.2 12.5-19.5 24.1-30.1 35.4q-1 1-2 2.1c-3.8 4-7.7 7.7-11.9 11.3-2.3 2-4.5 4.1-6.7 6.2-7.3 6.7-15.2 12.5-23.1 18.4q-1 0.8-2 1.5c-51.4 38.2-112.8 58.8-176 65.5q-1.2 0.1-2.4 0.3c-4.6 0.4-9.1 0.6-13.6 0.7q-1.5 0-3.1 0.1c-85.7 1.4-167.3-24.6-234.2-78.7q-2.4-1.9-4.8-3.8c-8.6-7-16.4-14.9-24.2-22.7q-0.8-0.8-1.7-1.6c-7.1-7.1-13.8-14.4-20-22.3q-1.5-1.9-3.1-3.7c-12.6-15.4-23-32.1-32.9-49.3q-0.6-1-1.2-2.1c-19.6-34.3-31.7-73-38.1-111.8-0.2-1.4-0.2-1.4-0.5-2.8-2.6-17.7-3.6-35.5-3.5-53.4 0-1.4 0-1.4 0-2.9 0.2-56 13.5-110.5 39.4-160.2q1.3-2.7 2.7-5.3c8.4-16.5 18.5-32.2 30.2-46.5q1-1.2 2-2.5 2.9-3.8 6-7.5 1.1-1.4 2.3-2.9c6.9-8.4 14.6-16.2 22.3-23.9q0.8-0.8 1.6-1.6c6.9-7 14.1-13.5 21.8-19.6q1.8-1.5 3.5-2.9c53-44.1 121.2-70.3 189.5-76.1q1.8-0.2 3.6-0.3c60.6-4.8 122.4 6.4 177.4 32.3z" />
+										<path class="s1"
+											d="m457.2 220.8q4.3 0 8.6 0c14.9-0.1 29.8 0 44.7 1.1q1.7 0.1 3.4 0.2c8.4 0.7 16.2 2.1 24.1 4.9-1 3-1 3-3.6 4.6-3.4 1.4-6.8 2.4-10.4 3.4q-0.5 0.5-1 1-2.1 0.2-4.1 0.3c-4.9 0.5-7.9 2-11.9 4.7q0.5 1.5 1 3c2.1 1 2.1 1 4.6 1.7q1.2 0.4 2.5 0.7 0.9 0.3 1.9 0.6 0 1 0 2 0.9 0 1.7 0.1c13.7 0.9 31.5 6.2 40.9 16.9 5.3 7.5 8.1 15.5 10 24.5 0.9 4 2.1 7.1 4.4 10.5 1.5 3.8 2.2 6.9 2 11 2-0.1 2-0.1 4-1 1.3-2.3 1.3-2.3 2.2-5.2q0.5-1.5 1.1-3.2 0.6-1.6 1.1-3.4c4.5-13.2 4.5-13.2 9.6-17.2 0.7 9-0.3 16.2-3 24.8-1.8 6-2.6 11.9-3.2 18.1-2.3 20.2-13.9 37.7-27.8 52.1q-1.1 1.3-2.3 2.7c-3.3 2.8-6.4 3.6-10.6 4.4q-1.1 0.3-2.3 0.5-2.3 0.5-4.6 1-3 0.6-5.9 1.2c-36.5 8-74.4 5.2-110.4-3.7-1-0.3-1-0.3-2-0.5-11.7-2.9-22.7-6.7-32.8-13.3q-1-0.6-2.1-1.3c-27.4-17.8-27.4-17.8-33-29q-1.5 0-3 0-0.4 1.1-0.9 2.3c-5.9 14.4-11.2 27.2-23.1 37.7q-1.4 1.4-2.9 2.8c-10.5 10.3-22.9 18.6-36.1 25.2-1.3 0.7-1.3 0.7-2.6 1.4-11.5 5.9-24 8.5-36.4 11.6-1.5 0.4-1.5 0.4-3 0.8-27 6.7-52.3 10.6-77.8-3.3-24.5-14.7-42.1-44.7-49.1-72.2-2.9-14.8-5.8-33.7 1.9-47.3 0.8-1.4 0.8-1.4 1.6-2.9 6.4-10.9 15-15.9 25.6-22.1q2.2-1.3 4.4-2.7c32.4-21 77.9-24.8 115.4-30.3q1.3-0.2 2.7-0.4c20.4-3 40.9-5.7 61.4-8 8.1-0.8 16-1.9 24-3.6 10.5-2.3 21.2-3.2 32-4.2q1.3-0.1 2.6-0.2c22.2-2.1 44.2-2.8 66.5-2.8z" />
+										<path class="s2"
+											d="m120 349c1.6 2.4 2.7 4.5 3.9 7.1q0.5 1.3 1.1 2.5 0.5 1.3 1.1 2.7c5.9 13 11.9 25.4 20.9 36.7q0.9 1.1 1.8 2.3c11.8 14.5 29.8 23.5 48.2 25.7 13.8 0.9 26.6-1.1 40-4 1.1-0.2 1.1-0.2 2.2-0.5 5-1 9.9-2.2 14.8-3.5q1.4-0.4 2.8-0.7c23.2-6.2 42.9-15.6 61.2-31.3q1.2-1 2.5-2.1c5.6-4.9 10.6-10.2 15.6-15.8q0.9-1 1.9-2.1 0.5 0 1 0c0 5.6 0 11.2 0 17 2.6-0.3 5.3-0.7 8-1q3.6-0.2 7.1-0.3 1.8 0 3.5 0c4.6 0.4 7.8 2 11.3 4.9 2.2 4.7 1.2 10 0.8 15q-0.2 1.8-0.4 3.7-0.2 1.8-0.4 3.6c-0.1 3-0.1 3 1 5.5 3.4 2.6 7 1.9 11 1.5 1.4 0 1.4 0 2.8-0.1 8-0.6 16.1-1.3 24.1-2q2.4-0.2 4.8-0.4 1.2-0.1 2.5-0.2c9.3-0.7 18.6-1.5 28-1.6q1.1 0 2.3 0c4.2 0 6.6 0.4 9.6 3.4 0.5 2.2 0.5 2.2 0.5 4.8q0 1.5 0 2.9 0 1.5-0.1 3.1c0 1.6 0 1.6 0 3.2-0.6 25.7-13.2 47.4-31.4 65-13.7 12.9-32.7 21.9-51.3 24.9-3.4 0.6-4.8 1.2-7.8 3.2-2.5 3.8-2.6 6.7-2.7 11.2-0.1 7.6-0.1 7.6-1.2 8.7q-0.2 4-0.3 8.1c0 1.2 0 1.2 0 2.5q-0.1 3.9-0.2 7.9-0.1 3.9-0.2 7.8 0 2.5-0.1 4.9c-0.3 13.7-0.3 13.7-2.6 18.8-4.2 3.2-8.6 2.7-13.8 2.6q-1.6-0.1-3.3-0.1c-37.3-1-75-13.5-106.4-33.3-2.2-1.3-4.4-2.2-6.7-3.2-7-3-12.1-7.7-17.4-13q-3.1-3-6.3-5.9-0.9-0.8-1.8-1.6c-2.9-2.7-5.8-5.3-8.9-7.9-11.6-10.1-21-22.2-30-34.6q-0.7-0.9-1.4-1.9c-11.9-16.6-20.5-35-27.6-54.1-0.7-1.8-0.7-1.8-1.4-3.7-4.4-11.6-8.7-24.3-9.3-36.8-0.3-2.7-1-5.1-1.8-7.6-2.1-8.4-1.8-16.6-1.7-25.2q0-2.4 0.1-4.8 0-6 0.1-11.9z" />
+										<path class="s3"
+											d="m445.9 245.9q5.7 0 11.3 0c13.8-0.1 27.6 0 41.4 0.5q1.3 0.1 2.8 0.1c18.9 0.9 42 4.5 56.6 17.7 9.2 10.3 11.6 22.5 11 35.8-0.5 4.6-1.3 9.2-2.1 13.7q-0.4 1.9-0.7 3.8c-3.3 17-8.5 34-23.2 44.5-13.5 8-36.3 6.2-51.4 6.2q-1.1 0.1-2.1 0.1c-12.4-0.1-24.4-1-36.5-3.3-1.3-0.2-1.3-0.2-2.7-0.5-24.9-4.8-50.4-13.1-69.3-30.5q-0.9-0.8-1.9-1.7c-12.5-11.5-19.8-27.8-25-43.7-0.5-1.4-0.5-1.4-1-2.8-2.1-6.8-3.1-12.4-1.1-19.4 5-8.6 13.7-13.4 23-16.3 22.7-6 47.6-4.3 70.9-4.2z" />
+										<path class="s3"
+											d="m328.6 265.4c7.5 8.1 7.8 17.6 7.7 28.2 0 1.6 0 1.6 0 3.2-0.3 21.6-7.4 41.7-21.3 58.2q-1 1.2-2 2.4c-24.1 28.4-64.6 41.7-100.6 44.8-16 1-28.1-3-40.7-13-14.5-13.1-23.8-34.7-28.7-53.2q-0.3-1.1-0.7-2.3c-2.1-7.8-3.2-17.6 0.3-25.1 1.1-1.8 1.1-1.8 2.4-3.6q0.7-1 1.5-2c17.5-21.8 50.6-29.5 76.5-35 1.6-0.3 1.6-0.3 3.2-0.7 82.1-17.2 82.1-17.2 102.4-1.9z" />
+										<path class="s2"
+											d="m352.5 123.6q4.5 0 8.9 0c43.8-0.1 83 13.8 120.6 35.4q1.4 0.8 2.7 1.6c2.7 1.7 5 3.6 7.4 5.6 6.9 5.7 13.9 10.9 21.5 15.7 8.5 5.6 15 13.6 21.3 21.5 1.9 2.4 4 4.6 6.1 6.8 3.2 3.6 3.9 6.1 4 10.8-4.1-3.4-8-7-11.7-10.8-4.3-4.3-8.8-8.1-13.5-11.9-2.9-2.4-5.7-5-8.4-7.6-35.2-32.8-89.8-53.4-137.7-54.3-2.8 0.3-2.8 0.3-4.3 2.7-1.6 3.4-2.1 6.2-2.5 9.9q-0.1 1-0.3 2.1-0.4 3.3-0.8 6.7-0.2 2.4-0.5 4.8-0.8 6.2-1.5 12.4-1.2 10-2.4 19.9-0.4 3.4-0.8 6.9c-0.9 8.2-2.4 16.2-4.6 24.2 3.6 0 7.3 0 11 0-3.2 1.6-5 2.3-8.4 2.9q-1.3 0.2-2.7 0.4-1.5 0.2-3.1 0.4-1.6 0.3-3.3 0.6c-14.4 2.1-28.9 3.7-43.4 5.5-15.4 1.8-30.7 3.9-46.1 6.2-1.3 0.2-1.3 0.2-2.6 0.4-40.6 6-82.7 13.7-117.4 36.6-2.8 1.9-2.8 1.9-5 3q-1-0.5-2-1 0.9-1.7 1.8-3.4c1.5-2.9 2.5-5.7 3.3-8.9 2.3-7.7 6.1-14.7 9.7-21.8q0.6-1.1 1.2-2.2c5.7-11.1 11.9-20.9 20.5-30.1 2.2-2.3 4.1-4.8 6-7.2 8-9.8 16.6-19.5 26.5-27.4q1.6-1.3 3.2-2.7c41.5-34.3 93.5-54 147.3-53.7z" />
+										<path class="s4"
+											d="m407 8c12.7 0.9 12.7 0.9 18.2 2.2 1.6 0.3 1.6 0.3 3.2 0.7 1.7 0.3 1.7 0.3 3.4 0.7 1.7 0.4 1.7 0.4 3.5 0.8 48.2 11.2 93 31.8 132.8 61.2 1 0.7 1 0.7 2 1.5 4.8 3.5 4.8 3.5 5.9 6.9q-1 0.8-2 1.5c-9.6 7.7-18.2 16.1-26.2 25.5-4.9 5.5-10.1 10.5-15.6 15.3-4.4 3.8-8.3 7.9-12.2 12.2-13.4 14.7-13.4 14.7-19.7 16.7-4.2-0.3-5.5-1.4-8.6-4.3-19.7-16.6-49.2-27.5-74.2-32.3q-1.2-0.2-2.4-0.5-1.1-0.2-2.1-0.3c-3-1.2-4.1-2.2-6-4.8-0.6-3.3-0.5-6.6-0.5-9.9 0-1.5 0-1.5 0-3.1q0.1-4.9 0.1-9.9 0-3.5 0-6.9 0.1-9.1 0.1-18.2 0.1-9.3 0.1-18.6 0.1-18.2 0.2-36.4z" />
+										<path class="s5"
+											d="m608.1 423.9q1.3 0 2.6 0 1.3 0 2.7 0 1.5 0 3 0 4.8 0 9.5 0 3.4 0 6.7 0 8.7 0 17.5 0 8.9 0 17.9 0.1 17.5 0 35 0-0.5 2.8-0.9 5.6-0.3 1.6-0.5 3.2c-5.1 28.2-16 55.6-28.6 81.2q-0.6 1.3-1.3 2.6c-8.7 17.4-19.2 33.7-30.7 49.4q-1.2 1.7-2.4 3.3-2.8 3.9-5.6 7.7c-4.6-3.8-9-7.8-13.2-12.1-0.9-0.8-0.9-0.8-1.7-1.7q-2.8-2.8-5.7-5.6-1.9-2-3.9-4-4.1-4-8.2-8.2-5.2-5.2-10.5-10.5-4.1-4-8.1-8.1-1.9-1.9-3.9-3.8-2.7-2.7-5.4-5.5c-0.8-0.8-0.8-0.8-1.6-1.6-4.6-4.6-4.6-4.6-5.1-8.5 0.4-4.7 2.4-7.7 4.8-11.7q1.4-2.4 2.8-4.9 0.7-1.2 1.4-2.4c8-14.3 13.5-29.7 17.7-45.6q0.3-1.2 0.6-2.4 0.6-2.3 1.1-4.6c1.3-4.9 3-7.6 6.9-10.8 2.7-0.9 4.3-1.1 7.1-1.1z" />
+										<path class="s6"
+											d="m12 426q19.2-0.1 38.5-0.2 8.9 0 17.8-0.1 8.6-0.1 17.3-0.1 3.2 0 6.5 0 4.6-0.1 9.2-0.1c1.4 0 1.4 0 2.8 0 4.2 0 6.3 0.1 9.9 2.4 2 2.1 2.8 3.4 3.6 6.2q0.3 1.2 0.7 2.3c0.3 1.3 0.3 1.3 0.6 2.5 2.4 8.1 5.3 15.6 9.1 23.1q0.9 1.9 1.8 3.8c5.4 11.1 11.4 22.2 18.5 32.4 1.8 3 2.5 5.2 2.3 8.7-1.4 4.9-5.4 8.3-9.1 11.4-6.6 5.6-12.6 11.7-18.7 17.8q-1.7 1.7-3.4 3.4-4.5 4.6-9.1 9.1-4.6 4.6-9.2 9.3-9.1 9-18.1 18.1c-3.2-1.5-4.9-2.8-7-5.6q-0.8-1.1-1.7-2.3-0.8-1.2-1.7-2.4-1-1.3-1.9-2.6c-25.9-36.1-59.2-91.1-58.7-137.1z" />
+										<path class="s7"
+											d="m235 577c3 1.3 5.6 3.1 8.3 4.9 15.5 9.4 32.8 15.8 50.5 19.5q1.1 0.2 2.3 0.5 0.9 0.2 1.9 0.3c3.1 1.2 4.7 2.4 7 4.8 0.7 3.1 0.6 6.2 0.6 9.5 0 1.4 0 1.4 0 2.8q0 4.8-0.1 9.5 0 3.3 0 6.6-0.1 8.7-0.2 17.3 0 8.8-0.1 17.7 0 17.3-0.2 34.6-2.4-0.2-4.8-0.5-1.3-0.1-2.7-0.2c-48.6-5.3-99.8-28.4-139.5-56.3 6.3-14.5 23.6-26.7 34.8-37.8q4.3-4.3 8.7-8.7 2.7-2.7 5.4-5.3c4.4-4.4 8.6-8.8 12.6-13.5 4.4-4.8 9.1-6.4 15.5-5.7z" />
+										<path class="s8"
+											d="m495 585c7.4 5.5 13.8 12.6 20.4 19.1q0.9 0.9 1.8 1.8 4.5 4.5 9.1 9.1 3.8 3.7 7.6 7.4 4.6 4.6 9.1 9.1 1.8 1.8 3.5 3.5 2.5 2.4 4.9 4.8 1.3 1.4 2.8 2.8c1.8 2.4 1.8 2.4 1.7 4.6-1.2 2.4-2.4 3.2-4.6 4.5q-1.2 0.8-2.5 1.6-1.3 0.8-2.7 1.6c-1.4 0.8-1.4 0.8-2.8 1.7-37.7 22.5-89.8 48.8-135.3 48.4q-0.1-17.5-0.2-35 0-8.1-0.1-16.2-0.1-7.9-0.1-15.7 0-3 0-6-0.1-4.2-0.1-8.4 0-1.2 0-2.5c0-3.6 0.2-5.7 2.4-8.7 2.4-1.7 3.8-2.1 6.7-2.4q1.4-0.1 2.8-0.3c1.4-0.1 1.4-0.1 2.9-0.2 9.7-1.2 18.5-3.2 27.7-6.6q1-0.4 2-0.7c10.3-3.8 19.5-8.6 28.8-14.5 5-3 8.3-5 14.2-2.8z" />
+										<path class="s9"
+											d="m434.9 424.8q1.3-0.1 2.7-0.1c2.4 0.3 2.4 0.3 4.2 1.5 3 4.6 0.3 12.5-0.7 17.7-1.3 5.4-3.3 9.1-8.1 12.1-2.3 0.4-2.3 0.4-4.9 0.4q-1.5 0-3 0c-1.5 0-1.5 0-3.1 0-1.7 0.1-1.7 0.1-3.3 0.1q-5.2 0-10.3 0.1-5.2 0-10.4 0.1-3.2 0-6.4 0-1.4 0-2.9 0-1.3 0-2.6 0c-2.3 0.1-2.3 0.1-4.1 2.3 0.5 3 0.5 3 1 6 23.3 0.5 23.3 0.5 47 1-11.8 17.7-24.6 27.9-44 36q-1.2 0.5-2.5 1.1c-2.2 0.8-4.3 1.4-6.5 1.9q-1.6 0.4-3.3 0.8c-24.8 5.5-50.7 2.6-72.4-11.1-16-10.6-30.4-26-36.3-44.7-0.5-3.2-0.4-5.7 0-9 5.5-5.5 17.1-4.6 24.3-5.1q3.1-0.2 6.1-0.4 3.2-0.2 6.5-0.4 10.3-0.8 20.7-1.5 2.4-0.2 4.8-0.3c18.8-1.4 37.6-2.8 56.4-4.4q3.7-0.2 7.4-0.5 5.9-0.5 11.7-1 2.2-0.2 4.4-0.3c9.1-0.8 18.4-2.2 27.6-2.4z" />
+										<path class="s10"
+											d="m304 8q0.2 19.8 0.3 39.6 0 9.2 0.1 18.4 0.1 8.9 0.1 17.8 0 3.4 0 6.8 0.1 4.7 0.1 9.5 0 1.4 0 2.8c0 4.5-0.1 6.5-2.9 10.1-3.3 2.4-5.9 3.1-9.9 3.9-6.2 1.4-12.3 3.1-18.4 5.1-1.1 0.4-1.1 0.4-2.2 0.7-4.8 1.6-8.9 3.7-13.2 6.3-10.8 5.1-10.8 5.1-16 4-2.6-3.6-3.7-7.1-4.8-11.4-1.6-6.3-3.3-12.5-5.3-18.8q-0.4-1.4-0.8-2.8-1-3.2-2-6.3-1.9-6.3-3.8-12.6-1.1-3.6-2.2-7.2-0.7-2.3-1.4-4.6-1-3.3-2.1-6.7-0.3-1-0.6-2.1-1.7-5.6-3.4-11.1-0.4-1-0.8-2.2-0.6-2.1-1.3-4.1c-0.9-2.9-1.5-5.1-1.5-8.1 26.1-12.7 62.5-27 92-27z" />
+										<path class="s11"
+											d="m686 229c10.3 26.2 17.5 53.3 20.6 81.3q0.2 1.6 0.4 3.4 0.5 4.1 1 8.3-19.4 0.2-38.9 0.3-9 0-18 0.1-8.7 0.1-17.4 0.1-3.3 0-6.7 0-4.6 0.1-9.3 0.1-1.3 0-2.7 0c-4.5 0-6.4-0.1-10-3-2.1-2.8-2.9-4.6-3.4-8q-0.3-1.5-0.6-3.1c-0.3-1.6-0.3-1.6-0.6-3.2-1.2-7-2.6-13.5-5.6-20-2-5.6-1.6-11.2 0.8-16.5 4.8-8.1 11.5-11 20.1-13.7 12.5-4.3 24.5-9.4 36.5-14.7 7.5-3.3 15-6.3 22.7-8.9q1.1-0.3 2.3-0.7c3-1 5.6-1.8 8.8-1.8z" />
+										<path fill-rule="evenodd" class="s12"
+											d="m354.1 381.8q1.7-0.1 3.5-0.1c4.5 0.4 7.8 1.9 11.3 4.9 2.2 4.7 1.2 10 0.8 15q-0.2 1.8-0.4 3.7-0.2 1.8-0.4 3.6c-0.1 3-0.1 3 1 5.5 3.4 2.6 7 1.9 11 1.5q1.4 0 2.8-0.1c8-0.6 16.1-1.3 24.1-2q2.4-0.2 4.8-0.4 1.2-0.1 2.5-0.2c9.3-0.7 18.6-1.5 28-1.6q1.1 0 2.3 0c4.2 0 6.6 0.4 9.6 3.4 0.5 2.2 0.5 2.2 0.5 4.8 0 1.5 0 1.5 0 2.9q0 1.5-0.1 3.1c0 1.6 0 1.6 0 3.2-0.6 25.7-13.2 47.4-31.4 65-13.7 12.9-32.7 21.9-51.3 24.9-3.4 0.6-4.8 1.2-7.8 3.2-2.5 3.8-2.6 6.7-2.6 11.1 0 2.7-0.1 5.2-0.3 7.8q-1 0.5-2 1-0.1-1.4-0.1-2.9-0.1-1.9-0.2-3.8-0.1-1.8-0.2-3.7c-0.5-3.8-1-5.7-3.5-8.6-4.9-2-9.6-2.3-14.9-2.6-23.1-1.3-43-9.7-60.1-25.4q-0.8-0.7-1.6-1.4c-16.2-14.9-28.6-33.7-29.7-56.3 0-3 0.2-4.1 1.8-6.7 7.2-4.6 14.8-5.4 23.1-6.2q1.8-0.1 3.7-0.3c14.2-1.4 28.4-2.3 42.6-3.2q7.9-0.4 15.7-0.9 1.7-0.1 3.5-0.2c13.4 0 13.4 0 24.9-4.8 0.3-3 0.3-3 0.2-6.5q0-2 0-4 0-2.1-0.1-4.1 0-2.1 0-4.2 0-5.1-0.1-10.2c-7.9-0.3-15.8-0.7-24-1-0.5-1-0.5-1-1-2 4.7-0.9 9.3-1.1 14.1-1.3zm58.1 44.8c-18.6 1.7-37.3 3.2-55.9 4.6q-1.7 0.1-3.5 0.2-16.2 1.2-32.5 2.4-9 0.6-18 1.2-3.3 0.3-6.7 0.5-4.7 0.4-9.4 0.7c-1.3 0.1-1.3 0.1-2.7 0.2-10 0.3-10 0.3-18.5 4.7-1.9 11.2 5.7 22 11.8 30.8 14.3 18.7 33.4 30.3 56.2 35.2q1.2 0.3 2.4 0.5c23.9 4.3 50.5-2.4 70.6-15.5 9.6-7.1 18.6-15.2 24-26-15.5-0.3-31-0.7-47-1-0.5-3-0.5-3-1-6 2-2 2-2 4.1-2.2 1.2 0 1.2 0 2.5 0q1.5 0 2.9-0.1 1.6 0.1 3.2 0.1 3.3-0.1 6.6-0.1 5.2 0 10.4 0 5 0 10.1-0.1 1.5 0.1 3.1 0.1c6.3-0.1 6.3-0.1 11.7-3.1 3.8-4.2 4.6-8.1 5.5-13.5 0.3-1.5 0.3-1.5 0.5-3.1 1-5.6 1-5.6-0.8-10.7-6.3-4.7-22-0.6-29.6 0.2z" />
+										<path class="s13"
+											d="m501 35c20.5 6.1 40.9 19.4 58 32-4 4.7-8.1 9.3-12.4 13.7-0.9 0.9-0.9 0.9-1.9 1.9q-8.4 8.5-16.8 17.1-5.7 5.7-11.3 11.4-5.4 5.6-10.9 11.1-2.1 2.1-4.2 4.3-2.9 2.9-5.8 5.8c-0.9 0.9-0.9 0.9-1.7 1.8-3.9 3.8-3.9 3.8-7.1 4.1-5.2-0.5-9.2-2.5-12.9-6.2-0.8-7.4 0.7-13.7 3.1-20.7q0.9-3 1.9-6.1 0.5-1.5 1-3.1c1.6-4.9 3-9.8 4.5-14.7 2.6-8.5 5.3-17 8-25.4 2.2-6.9 4.2-13.7 6-20.6 1.4-5.3 1.4-5.3 2.5-6.4z" />
+										<path class="s14"
+											d="m283 12q0.2 19.4 0.3 38.9 0 9 0.1 18 0.1 8.7 0.1 17.4 0 3.3 0 6.7 0.1 4.6 0.1 9.3 0 1.3 0 2.7c0 4.5-0.1 6.4-3 10.1-3.8 2.8-6.5 2.6-11.1 2.3-2.5-0.4-2.5-0.4-4.9-1.9-1.8-2.8-3.3-5.7-4.7-8.8-0.8-1.9-0.8-1.9-2.9-2.7q-0.4-1.2-0.8-2.5c-1.6-4.6-3.9-8.6-6.3-12.9-3.5-6.1-6.8-12.3-9.9-18.6-3.4-7-7.2-13.9-11.1-20.7-3.3-6-6.2-12.1-8.9-18.3 15.4-6 30.7-11.5 46.7-15.7q1-0.2 2-0.5c10.6-2.8 10.6-2.8 14.3-2.8z" />
+										<path class="s15"
+											d="m426 11c8.3 1.3 16.3 2.9 24.4 5.1 1.6 0.5 1.6 0.5 3.3 0.9 11.5 3.2 23.6 6.6 34.3 12-0.6 4.5-2.4 8.1-4.5 12-0.6 1-0.6 1-1.1 2.1q-1.8 3.3-3.6 6.6-1.2 2.3-2.4 4.6-3.1 5.8-6.2 11.5-1.7 3.1-3.3 6.1-4.4 8.3-8.9 16.5-2.8 5.2-5.5 10.4-0.5 1-1.1 2.1-1.4 2.7-2.8 5.3c-1.6 2.8-3 4.8-5.6 6.8-4.5 0.9-8.8 0.5-13-1.2-2.6-2.3-3.8-4.4-4.2-7.8 0-1 0-1 0-2.1q0-1.2 0-2.4 0-1.3 0-2.7 0-1.4 0-2.8 0-4.6 0-9.2 0-3.2 0-6.3 0-8.4 0.1-16.8 0-8.6 0-17.1 0-16.8 0.1-33.6z" />
+										<path class="s16"
+											d="m690 240c4 11.2 7.5 22.5 10.3 34.1q0.4 1.5 0.7 3c4.6 19.7 4.6 19.7 3 22.9q-17.5 0.1-35 0.2-8.2 0-16.3 0-7.9 0.1-15.7 0.1-3 0-6 0-4.2 0-8.4 0c-1.2 0.1-1.2 0.1-2.5 0.1-5.7-0.1-5.7-0.1-7.8-1.7-2.4-3.1-2.6-6.3-2.7-10.1q-0.1-1.4-0.2-2.8c0.9-4 3.3-5.7 6.6-7.8 2.9-1.7 6-3.1 9-4.6 7.3-3.5 14.5-7.3 21.7-11.2 9.3-5.1 18.7-10.1 28.1-14.9q1.5-0.8 3-1.6 1.3-0.7 2.7-1.4 2.6-1.4 5.2-3c2.3-1.3 2.3-1.3 4.3-1.3z" />
+										<path class="s17"
+											d="m358 4q3.3 0 6.7 0 1.9 0 3.8 0c4.1 0 8.2 0.2 12.3 0.4q1 0.1 2.1 0.2c5 0.3 5 0.3 6.1 1.4q0.1 4.7 0.1 9.5 0 1.5 0 3 0 5 0 9.9 0 3.4 0 6.9 0 9 0 18.1 0 9.2-0.1 18.4 0 18.1 0 36.2-5.9 0.1-11.8 0.2-3 0.1-6 0.2c-1.9 0-1.9 0-3.8 0-1.7 0-1.7 0-3.5 0.1-2.9-0.5-2.9-0.5-4.8-1.9-1.7-4-1.5-7.9-1.4-12.2q0-1.5 0-3 0-4.8 0-9.7 0-3.3 0-6.7 0-8.8 0.1-17.6 0-9 0.1-18 0-17.7 0.1-35.4z" />
+										<path class="s18"
+											d="m613.2 375.6c1.2 0 1.2 0 2.5 0q1.4 0 2.8 0.1 1.5 0 3 0 4.8 0 9.7 0 3.3 0 6.7 0 8.8 0 17.7 0.1 9 0 18 0.1 17.7 0 35.4 0.1c-0.4 10.5-1.1 20.7-3 31q-19.1 0.1-38.1 0.2-8.9 0-17.7 0-8.6 0.1-17.1 0.1-3.3 0-6.5 0-4.6 0-9.1 0c-1.4 0.1-1.4 0.1-2.8 0.1-6.1-0.1-6.1-0.1-9.3-1.8-2.5-2.8-1.8-5.7-1.7-9.3 1.3-16 1.3-16 3.6-19 2.1-1.6 3.2-1.7 5.9-1.7z" />
+										<path class="s19"
+											d="m124 93c1.2 1.3 1.2 1.3 2.8 3.1 5 5.9 10.5 11.3 16 16.8q3 3 6 5.9 6.3 6.3 12.6 12.6 7.3 7.3 14.6 14.6 3 2.9 5.9 5.8 1.8 1.8 3.6 3.6 0.8 0.8 1.6 1.6c4.7 4.7 4.7 4.7 5.3 8.8-0.7 6-5.3 9.3-9.6 13-3.7 2.7-6.8 4.7-11.4 4.7-3.2-0.7-4.5-2-6.9-4.2q-1.3-1.2-2.6-2.5-1.5-1.4-2.9-2.8-0.7-0.7-1.5-1.5c-3.9-3.8-7.8-7.6-11.6-11.5q-1.9-1.9-3.7-3.7-4.9-4.9-9.7-9.7-4.9-4.9-9.8-9.9-8-7.9-15.9-15.9-3.4-3.4-6.8-6.8 4.6-4.7 9.3-9.4 1.6-1.6 3.1-3.2 2.3-2.3 4.6-4.6 1.4-1.4 2.8-2.8c2.2-2 2.2-2 4.2-2z" />
+										<path class="s20"
+											d="m325 609c2.1-0.4 2.1-0.4 4.6-0.4q1.3 0 2.7 0 1.5 0 3 0 1.4 0 2.8 0c5.3 0 9.5 0.1 13.9 3.4 2.2 5 2.3 9.6 2.2 15q0 1.4 0 2.7 0 4.4 0 8.8 0 3 0 6.1 0 8-0.1 16 0 8.2 0 16.3 0 16.1-0.1 32.1-2.9 0-5.7 0-1.6 0-3.2 0c-3.9 0-7.8-0.2-11.7-0.4q-1-0.1-2-0.2c-3-0.1-5.5-0.4-8.4-1.4q-0.1-18.5-0.1-37 0-8.6-0.1-17.2 0-8.3 0-16.6 0-3.1 0-6.3 0-4.4 0-8.8 0-1.3 0-2.7c0-6.1 0-6.1 2.2-9.4z" />
+										<path class="s21"
+											d="m168 524c2.8 2.1 5.1 4.6 7.4 7.2 1 1 1 1 2 2 4.5 4.9 4.5 4.9 4.9 8.7-0.4 3.7-1.2 4.7-3.9 7.3-1.1 1.2-1.1 1.2-2.3 2.4q-1.3 1.2-2.6 2.5-1.3 1.2-2.6 2.6-4.2 4.1-8.5 8.2-4.1 4.1-8.3 8.2-2.6 2.5-5.2 5c-4.3 4.3-8.4 8.6-12.4 13.1-2 2.4-4.1 4.6-6.3 6.7q-1.3 1.3-2.6 2.6-1.2 1.2-2.5 2.5-1.3 1.3-2.7 2.6-3.2 3.2-6.4 6.4c-5.4-2.4-9.2-6.8-13.3-10.9q-1.3-1.2-2.6-2.4c-1.2-1.2-1.2-1.2-2.4-2.4q-1.1-1.1-2.2-2.2c-1.5-2.1-1.5-2.1-1.3-4 1.3-3.5 4.2-5.9 6.8-8.4q0.9-0.9 1.8-1.9 3.1-3.1 6.2-6.2 2.2-2.1 4.3-4.2 4.5-4.5 9-9 5.8-5.7 11.6-11.5 4.4-4.4 8.8-8.8 2.1-2.1 4.3-4.3 2.9-2.9 5.9-5.9 0.9-0.9 1.8-1.8c4.8-4.7 6.6-5.9 13.3-4.1z" />
+										<path class="s22"
+											d="m5 341q18.6-0.2 37.3-0.3 8.6 0 17.3-0.1 8.4-0.1 16.7-0.1 3.2 0 6.4 0 4.5-0.1 8.9-0.1 1.3 0 2.7 0c4.4 0 6.2 0.2 9.8 2.9 2.5 3.6 2.5 5.7 2.3 10.1 0 1.9 0 1.9 0 3.8-1 9.6-1 9.6-4.4 12.5-4.1 1.8-7.7 1.7-12.2 1.7q-1.4 0-2.8 0.1-4.5 0-9.1 0-3.1 0-6.3 0.1-8.2 0-16.5 0.1-8.5 0-16.9 0.1-16.6 0.1-33.2 0.2c0-10.2 0-20.5 0-31z" />
+										<path class="s23"
+											d="m532 554c2.2 1.5 2.2 1.5 4.5 3.7 1.3 1.3 1.3 1.3 2.7 2.5q1.4 1.4 2.8 2.8 1.4 1.4 2.9 2.8 4.8 4.6 9.5 9.3 0.8 0.8 1.7 1.7 4.5 4.4 8.9 8.9 3.7 3.6 7.4 7.3 4.5 4.4 9 8.9 1.7 1.6 3.4 3.3 2.4 2.4 4.7 4.7 1.3 1.3 2.7 2.7c1.8 2.4 1.8 2.4 1.7 4.6-2.3 4.5-7.1 7.6-10.9 10.8q-1.4 1.2-2.7 2.4c-6.8 5.6-6.8 5.6-11.3 5.6-1.6-1.5-1.6-1.5-3.3-3.5q-0.9-1.1-1.8-2.2-0.9-1.1-1.9-2.3c-2.6-2.8-5.2-5.6-7.8-8.4q-1-1.1-2-2.2c-4.3-4.6-8.8-8.8-13.5-13-4.4-3.9-8.5-8-12.6-12.1q-2.2-2.2-4.4-4.4-1.4-1.4-2.8-2.8-1.3-1.3-2.6-2.5c-6.3-7-6.3-7-6.3-11.7 2.7-7.6 13.3-18 22-16.9z" />
+										<path class="s24"
+											d="m615 117c4.3 3.5 8.1 7.1 11.6 11.4 1.1 1.4 1.1 1.4 2.2 2.7q2.5 3.3 4.8 6.6c0.7 0.9 0.7 0.9 1.4 1.9 0.5 0.7 0.5 0.7 1 1.4q-8.3 8.4-16.7 16.7-3.8 3.9-7.7 7.8-3.7 3.7-7.5 7.5-2.1 2.1-4.2 4.2-1.3 1.3-2.6 2.6c-1.1 1.2-1.1 1.2-2.3 2.3-4.1 3.9-4.1 3.9-7 4-3.2-1.7-4-4.9-5.3-8.2q-0.4-1-0.8-2-0.9-2.4-1.9-4.9c-2.9 3.4-4.4 7.2-6 11.3q-0.7 1.9-1.5 3.9c-0.4 0.9-0.4 0.9-0.7 1.9q-1.2 2.8-2.4 5.6c-1.5 3.6-2.6 7.2-3.6 11-0.9 2.5-2.1 4.2-3.8 6.3-2.7-0.1-4.4-0.4-6.3-2.4-1.4-1.8-2.7-3.6-4-5.5q-0.6-1-1.3-2c-3.2-4.7-4.9-7.3-4.4-13.1 1.4-2.2 1.4-2.2 3.6-4.4q1.2-1.3 2.4-2.6 1.5-1.5 3-3 0.8-0.8 1.7-1.7 6.7-6.7 13.4-13.4c10.4-10.2 10.4-10.2 20.1-20.9 4.4-4.9 9.1-9.4 13.7-14q1.7-1.6 3.3-3.2 3.9-3.9 7.8-7.8z" />
+										<path class="s25"
+											d="m628 444.8c1 0 1 0 2.1 0q1.1 0 2.2 0 3.7 0 7.3 0 2.5 0 5 0 6.7 0 13.3 0.1 6.8 0 13.5 0 13.3 0 26.6 0.1c-1.1 5.8-2.3 11.5-4.2 17.2q-0.3 0.9-0.6 1.8-0.7 2-1.3 4-1 2.9-2 5.9c-2.5 7.6-5.4 14.9-8.9 22.1q-15.4-7.6-30.6-15.5-2.2-1.1-4.3-2.1c-24.1-12.4-24.1-12.4-28.1-16.4-0.1-5.1 1-10.3 3-15 2.4-2.4 3.7-2.2 7-2.2z" />
+										<path class="s26"
+											d="m110.9 492c3.7 3 5.9 5.6 6.5 10.4-0.5 4.5-1.7 5.8-5 9q-0.7 0.7-1.5 1.5-2.4 2.4-4.8 4.7-1.7 1.7-3.4 3.4-4.4 4.3-8.9 8.7-4.5 4.4-9 8.9-8.9 8.7-17.8 17.4c-3-2.9-5.2-5.7-7.4-9.3q-0.9-1.6-1.9-3.2-1-1.6-2-3.3-0.9-1.7-2-3.4c-11.5-19.5-11.5-19.5-13.7-24.8 0.5-1.5 0.5-1.5 1-3 2.3-0.9 4.4-1.6 6.8-2.3q1-0.3 2.1-0.6 3.3-1 6.7-2 2.1-0.6 4.3-1.3 3.3-0.9 6.5-1.9 7.7-2.2 15.4-4.6 1-0.3 2-0.6 5.1-1.6 10.1-3.5c5.1-1.7 11.1-2.8 16-0.2z" />
+										<path class="s15"
+											d="m17 447q13.8-0.2 27.5-0.3 6.4 0 12.8-0.1 6.2-0.1 12.3-0.1 2.4 0 4.7 0 3.3-0.1 6.6-0.1 1.9 0 3.8 0c4.2 0.8 5.6 2.4 8.3 5.6 1.3 2.6 1.3 4.5 1.4 7.4q0 1.4 0.1 2.9c-0.7 3.8-2.4 4.5-5.5 6.7-2.3 1.3-4.6 2.5-7 3.7q-1 0.5-2 1.1-3.3 1.6-6.6 3.3-4.4 2.2-8.9 4.5-1.1 0.6-2.2 1.2-10.5 5.3-20.6 11.2c-1.9 1.1-3.8 2.1-5.7 3-3-1-3-1-4-2.6q-0.4-1.1-0.8-2.1-0.5-1.2-1-2.4-0.4-1.3-0.9-2.6-0.6-1.4-1.1-2.7-3.8-9.9-7.1-19.8-0.5-1.3-0.9-2.6-0.4-1.3-0.9-2.5-0.3-1.1-0.7-2.2c-0.8-3.5-1.2-6.9-1.6-10.5z" />
+										<path class="s27"
+											d="m617.2 491.8q5.4 1.6 10.8 3.4 2 0.6 3.9 1.2 3.8 1.3 7.7 2.5 6.4 2 12.8 3.9 1 0.3 2 0.6 9.8 2.8 19.6 5.6c-0.6 5.1-2.9 9.2-5.3 13.6q-0.7 1.3-1.3 2.5c-3.4 6.3-7 12.4-10.8 18.4q-0.8 1.2-1.6 2.4c-2.1 3.4-4.1 6.3-7 9.1q-0.6-0.6-1.2-1.2-6.2-6.3-12.5-12.5-2.3-2.3-4.6-4.7-3.3-3.3-6.7-6.7-1-1-2.1-2.1c-3.9-3.9-8-7.7-12.2-11.3q-2.9-2.6-5.6-5.3-0.9-0.9-1.8-1.7c-2.5-2.8-2.8-5.5-2.7-9.3 0.6-3.3 2.2-5.4 4.2-7.9 4.6-2.7 9.5-1.7 14.4-0.5z" />
+										<path class="s28"
+											d="m65 158c3.7 1.5 5.9 3.7 8.7 6.5q1.3 1.4 2.7 2.8 1.4 1.4 2.9 2.9 2.7 2.8 5.5 5.6 1.2 1.2 2.4 2.5c2.2 2.1 4.3 4 6.5 6 4.8 4 9.2 8.4 13.6 12.8q1.2 1.3 2.6 2.6 2.6 2.7 5.3 5.4 4.1 4.1 8.2 8.2 2.6 2.6 5.3 5.2 1.2 1.2 2.4 2.5 1.2 1.1 2.3 2.3 1 1 2.1 2c2.4 2.7 2.9 4.9 2.9 8.6-1 5.2-4.6 10.3-8.4 14.1-5.2 0-8.1-3.4-11.5-6.8q-1-0.9-2.1-1.9c-11.5-11.1-22.7-22.5-34-33.8q-4.8-4.9-9.6-9.7-9.4-9.4-18.8-18.8 0.9-1.9 1.9-3.8 0.5-1.1 1-2.1c1.5-2.8 3.1-5.5 4.9-8.1q0.9-1.4 1.8-2.9c0.7-1 0.7-1 1.4-2.1z" />
+										<path class="s29"
+											d="m232.4 614.9c4.2 1.3 7.4 3.2 10.6 6.1 3.1 6.1-1.3 15.9-3.3 22q-0.9 3.1-1.9 6.1-0.4 1.5-0.9 3-1.9 6.1-3.7 12.2-2.5 8.9-5.2 17.7c-3.5 1.3-5.7 0.9-9.1-0.5q-2.5-1.1-4.9-2.2-1.3-0.6-2.6-1.3c-10-4.6-19.7-9.8-29.4-15 3.9-5.5 8.1-10.4 13-15.2q0.9-0.9 1.9-1.9 3.1-3.1 6.2-6.1 2-2 4.1-4.1 3.8-3.8 7.6-7.5c4.9-4.9 4.9-4.9 9.8-9.8 2.7-2.6 4.1-3.4 7.8-3.5z" />
+										<path class="s30"
+											d="m493 614c2.9 2 5.2 4.5 7.6 7.1q0.9 0.9 1.8 1.9 4.6 4.8 8.8 9.8c4.8 5.5 10.1 10.6 15.2 15.7q1.6 1.5 3.1 3.1 3.8 3.7 7.5 7.4c-2.5 2.9-5.4 4.4-8.8 6.2q-1.7 0.9-3.5 1.8-0.9 0.5-1.9 0.9-2.7 1.4-5.4 2.8-5.2 2.7-10.4 5.3-1.6 0.8-3.2 1.6-1.4 0.7-2.9 1.4-1.3 0.6-2.6 1.3c-2.6 0.8-3.8 0.8-6.3-0.3-1.3-2.6-1.3-2.6-2.4-6.3q-0.3-0.9-0.6-1.9-1-3.4-2-6.8-0.4-1.2-0.7-2.5-1.6-5.3-3.1-10.6c-1.1-4.2-2.3-8.4-3.7-12.5q-0.3-1.1-0.7-2.2-0.9-2.8-1.9-5.7c-1.1-4.1-1.3-7.2-0.9-11.5 1.5-2.1 1.5-2.1 3.4-3.4q0.9-0.7 1.9-1.5c3.9-2.6 7.3-2.5 11.7-1.1z" />
+										<path class="s31"
+											d="m445 633c3.9 1.9 5.8 3.7 7.9 7.4q0.7 1.3 1.5 2.7 0.8 1.4 1.6 2.9 0.8 1.5 1.7 3 2.6 4.9 5.2 9.8c4.5 8.3 9 16.7 13.8 24.9 1.3 2.3 1.3 2.3 1.3 4.3-11.7 4.1-23.3 8-35.3 11q-1.3 0.3-2.5 0.6c-3.2 0.8-6 1.4-9.2 1.4q-0.2-12.2-0.3-24.4 0-5.7-0.1-11.4-0.1-5.5-0.1-10.9 0-2.1 0-4.2-0.1-2.9-0.1-5.9 0-1.6 0-3.3c0.6-2.9 0.6-2.9 3-5.2 4.2-2.7 6.6-3 11.6-2.7z" />
+										<path class="s32"
+											d="m333.8 4.9q1 0 2.1 0.1 2.6 0 5.1 0 0.1 19.7 0.2 39.4 0 9.1 0 18.2 0.1 8.8 0.1 17.6 0 3.4 0 6.8 0 4.7 0 9.4 0.1 1.4 0.1 2.8c0 1.3 0 1.3 0 2.6q0 1.1 0 2.3c-0.5 2.5-1.3 3.4-3.4 4.9-2.8 0.2-5.4 0.3-8.2 0.2q-1.1 0-2.3-0.1-2.7 0-5.5-0.1c-1.1-2.3-1.1-3.5-1.1-6.1q0-1.2 0-2.6 0-1.4 0-2.8 0-1.5 0-3 0-4.9 0-9.8 0-3.4 0-6.8 0-8.9 0-17.9 0-9.1 0.1-18.2 0-17.9 0-35.8c4.3-1.1 8.4-1.1 12.8-1.1z" />
+										<path class="s33"
+											d="m589 91q5.7 4.9 11.4 9.9c1.1 0.9 1.1 0.9 2.1 1.8 0.7 0.6 0.7 0.6 1.5 1.3-1.3 3-2.7 4.9-5.1 7.1q-1 0.9-1.9 1.8-1.1 0.9-2.2 1.9c-7.2 6.7-14.2 13.5-21.1 20.4q-0.8 0.8-1.5 1.5-4.5 4.5-8.9 9-3.9 3.8-7.7 7.6-5.6 5.6-11.2 11.3c-1.1 1.1-1.1 1.1-2.3 2.3q-1.9 1.9-3.7 3.7c-5.1 5.2-5.1 5.2-8.8 5.8-3.4-0.5-4.9-1.8-7.4-4.1q-1.2-1-2.4-2.1c-1.8-2.2-1.8-2.2-2.1-4.6 0.4-3.3 1.3-4.2 3.7-6.5 1.1-1.1 1.1-1.1 2.2-2.3q1.2-1.1 2.5-2.3 1.2-1.2 2.5-2.5 4-3.9 8-7.8 3.9-3.9 7.9-7.8 2.4-2.4 4.9-4.8c4.2-4.1 8.2-8.3 12-12.7 2.5-2.9 5.2-5.7 8-8.4q0.8-0.8 1.7-1.7 2.7-2.6 5.3-5.3 1.9-1.8 3.7-3.6 4.4-4.5 8.9-8.9z" />
+										<path class="s34"
+											d="m277 636c3 1.4 5.5 2.9 7 6q0.1 2.8 0.1 5.6 0 1.8 0 3.6 0 1.9 0 3.9 0 2 0 4 0 5.2 0 10.4 0 5.3-0.1 10.6 0 10.5 0 20.9c-4.8-0.5-9.4-1.2-14.1-2.5q-1.6-0.4-3.3-0.9-1.7-0.4-3.4-0.9-1.7-0.5-3.4-0.9c-14.7-4-14.7-4-20.8-6.8q-0.5-1-1-2c0.9-2.2 0.9-2.2 2.4-5q0.8-1.5 1.6-3.1c0.9-1.7 0.9-1.7 1.8-3.3q0.9-1.7 1.8-3.4 1.8-3.5 3.7-6.9 2.3-4.5 4.6-8.9 0.7-1.3 1.3-2.6 1.3-2.3 2.5-4.7c8.1-15.6 8.1-15.6 19.3-13.1z" />
+										<path class="s35"
+											d="m151 70c3.2 1.1 3.7 1.6 5.8 4.2 5.1 6 10.8 11.4 16.4 17q4.2 4.1 8.3 8.2 7.7 7.6 15.4 15.2 5.4 5.3 10.7 10.6 2.1 2 4.1 4 2.9 2.8 5.7 5.7 0.9 0.8 1.7 1.6c2.4 2.4 3.8 3.9 4.4 7.3-0.7 3.1-2.1 4.1-4.7 6q-1.1 0.8-2.3 1.7c-2.6 1.6-4.5 2.2-7.5 2.5-6.4-3.3-11.2-8.8-15.8-14.3-5.3-6.1-11-11.7-16.7-17.4q-3-2.9-5.9-5.9-1.9-1.9-3.8-3.8-0.9-0.8-1.8-1.7c-3.4-3.4-6.9-6.6-10.5-9.6-1.8-1.6-3.3-3.3-4.8-5.1-4.1-4.9-8.9-9-13.7-13.2 2.8-3.8 5.7-6.6 9.6-9.4q1.4-1 2.8-2.1 1.3-0.8 2.6-1.5z" />
+										<path class="s36"
+											d="m88 128c5.5 4.5 10.5 9.4 15.5 14.4q1.2 1.2 2.4 2.4 5 5.1 10.1 10.2 3.7 3.7 7.4 7.4 1.1 1.2 2.2 2.3c4.1 4.1 8.3 8 12.6 11.8 2.3 1.9 4.4 4 6.5 6.1q1.2 1.1 2.4 2.3 1.1 1.2 2.3 2.4 1.3 1.2 2.5 2.5 1.2 1.1 2.3 2.3 1.1 1.1 2.2 2.1c2 2.2 2.5 3.5 3 6.4-0.6 4.9-3.1 7.9-6.4 11.4-3 2-3 2-5 1.8-2.2-0.9-3.4-1.8-5.1-3.5q-0.9-0.9-1.8-1.8-0.9-1-1.9-1.9-1-1.1-2-2.1-3.4-3.3-6.7-6.7-2.3-2.3-4.6-4.6-6.1-6.1-12.2-12.3-6.2-6.2-12.4-12.4-12.1-12.2-24.3-24.5c1.6-4.3 3.6-7.3 6.6-10.8q1.2-1.5 2.5-3 0.9-1.1 1.9-2.2z" />
+										<path class="s37"
+											d="m200.9 555.4c4 2.1 7.7 4.6 10.1 8.6-0.1 5.1-1.9 7.5-5.3 10.9q-0.9 0.9-1.9 1.8-0.9 1-1.9 2-3.2 3.2-6.4 6.3-2.3 2.2-4.5 4.4-5.8 5.8-11.7 11.6-5.9 5.9-11.9 11.8-11.7 11.6-23.4 23.2c-4.3-1.6-7.3-3.6-10.8-6.6q-1.5-1.2-3-2.5-1.1-0.9-2.2-1.9c1.3-2.9 2.6-4.8 5-7q0.9-0.8 1.8-1.6c0.9-0.8 0.9-0.8 1.9-1.6 4.4-4 8.5-8.1 12.4-12.6 3.7-4.3 7.8-8.3 11.8-12.3 1.3-1.3 1.3-1.3 2.6-2.6 3.8-3.7 7.6-7.5 11.7-10.9 4.6-4 8.7-8.6 12.8-13.1 7.8-8.6 7.8-8.6 12.9-7.9z" />
+										<path class="s38"
+											d="m618.5 339.5q1.5 0 3 0 4.8 0.1 9.7 0.1 3.3 0 6.7 0 8.8 0.1 17.7 0.1 9 0.1 18 0.1 17.7 0.1 35.4 0.2c0 6.3 0 12.5 0 19q-19 0.2-38.1 0.3-8.8 0-17.7 0.1-8.5 0.1-17 0.1-3.3 0-6.5 0-4.6 0.1-9.1 0.1-1.4 0-2.8 0c-4.4 0-6.2-0.2-9.9-3-2.1-2.9-2.5-4.1-2.4-7.7q0-1.2 0-2.5c1.5-7.6 6.4-7 13-6.9z" />
+										<path class="s39"
+											d="m6 389q18.9-0.1 37.7-0.1 8.8 0 17.6-0.1 8.4 0 16.9 0 3.2 0 6.4 0 4.5 0 9 0 1.4 0 2.7 0 1.3 0 2.5 0 1.1 0 2.2 0c2.4 0.2 4 0.9 6 2.2 1.4 2.8 1.2 5.3 1.2 8.5q0 1.7 0 3.5c-0.2 3-0.2 3-2.2 5-3.1 0.2-6.1 0.3-9.2 0.2q-1.5 0-2.9 0-4.8 0-9.5 0-3.3 0-6.6 0-8.7 0-17.4-0.1-8.8 0-17.7 0-17.3 0-34.7-0.1c-0.7-6.3-1.3-12.5-2-19z" />
+										<path class="s40"
+											d="m25 237c9.7 2.2 19.2 5.2 28.7 8.2 14.6 4.7 29.2 9.3 44 13.4 1.4 0.4 1.4 0.4 2.9 0.8q2.7 0.8 5.4 1.5c11 3.1 11 3.1 15 7.1 0.6 5.3-0.5 8.4-3 12.9-1.7 3.5-2.3 7.3-3 11.1-1.6 0.7-1.6 0.7-4 1-2.9-1.4-2.9-1.4-6.2-3.4-5.1-3.1-10.3-5.8-15.7-8.3-9-4.1-17.5-9-26.1-13.9-7-4-14.1-7.8-21.2-11.6q-1.3-0.7-2.6-1.4-1.1-0.6-2.3-1.3c-1.9-1.1-1.9-1.1-3.9-3.1q-2.5-1.1-5.1-2.1-1.4-0.6-2.8-1.1-1-0.4-2.1-0.8c0.7-3 1.3-5.9 2-9z" />
+										<path class="s41"
+											d="m555 525.3c3.5 1.2 5.8 4.1 8.3 6.7 1 0.9 1 0.9 1.9 1.9q3.1 3.1 6.2 6.2 2.1 2.1 4.3 4.3 5.6 5.7 11.2 11.3 5.8 5.8 11.5 11.6 11.3 11.3 22.6 22.7-1.4 1.7-2.9 3.3-0.8 1-1.6 1.9-2.7 3.1-5.4 6.2-0.9 1.1-1.8 2.1-0.6 0.7-1.3 1.5c-4.6-3.9-9.1-7.9-13.3-12.2q-0.9-0.9-1.8-1.7-1.8-1.8-3.6-3.6-2.7-2.8-5.4-5.5c-5.2-5.2-10.4-10.4-15.1-16-4.5-5-9.4-9.6-14.1-14.2q-2.2-2.1-4.3-4.2-1.2-1.2-2.5-2.5c-2.9-3.2-3.5-6.6-3.5-11 1-3.7 3.6-5.5 6.5-7.9 2.1-1.2 2.1-1.2 4.1-0.9z" />
+										<path class="s42"
+											d="m383.5 616.8c1.5-0.1 1.5-0.1 3-0.1q1.2 0.1 2.5 0.3c2.5 3.8 2.3 6.9 2.2 11.3q0 1.3 0 2.6 0 4.2 0 8.4 0 2.9 0 5.9 0 7.6-0.1 15.3 0 7.9 0 15.7 0 15.4-0.1 30.8c-2.7 0.9-4.2 1.1-7 1.1-1.1 0-1.1 0-2.3 0-1.2 0-1.2 0-2.4 0q-1.2 0-2.4-0.1-3 0-5.9 0-0.2-16.3-0.3-32.5 0-7.6-0.1-15.2-0.1-7.3-0.1-14.5 0-2.8 0-5.6-0.1-3.9-0.1-7.8 0-1.1 0-2.3c0-4 0.6-6.5 3-9.6 3.6-3.4 5.2-3.7 10.1-3.7z" />
+										<path class="s43"
+											d="m646 155c2.9 3.6 5.7 7.3 8.3 11.1q1.1 1.5 2.2 3.1c1.5 2.8 1.5 2.8 1.4 4.7-1.2 2.9-3 4.5-5.2 6.7q-1.3 1.4-2.7 2.8-1.5 1.5-3 3-1.6 1.5-3.1 3-3.2 3.3-6.4 6.4-4.1 4.1-8.2 8.3-3.2 3.1-6.4 6.3-1.5 1.5-3 3-2.1 2.1-4.2 4.2c-1.2 1.2-1.2 1.2-2.5 2.4-2.8 2.5-4.8 4-8.6 4-4.2-1.6-6.6-5-8.6-9-0.7-3.9-1-7.5 1.3-10.9 0.8-0.9 0.8-0.9 1.7-1.8 0.9-1.1 0.9-1.1 1.9-2.1q5.4-5.6 10.9-11.1 1.2-1.2 2.5-2.5 3.9-3.9 7.8-7.8 2.7-2.6 5.3-5.2 4.8-4.9 9.7-9.7 4.4-4.4 8.9-8.9z" />
+										<path class="s44"
+											d="m8 309c33.3 0 66.7 0 101 0 0 3.6 0 7.3 0 11-3 3-3 3-4.9 3.4-1.1 0-1.1 0-2.2 0-1.3 0-1.3 0-2.6 0q-1.3 0-2.7-0.1-1.5 0-3 0-4.8 0-9.5 0-3.4 0-6.7 0-8.7 0-17.5-0.1-8.9 0-17.9-0.1-17.5 0-35-0.1 0-2.7-0.1-5.3 0-1.5 0-3c0.1-2.7 0.1-2.7 1.1-5.7z" />
+										<path class="s45"
+											d="m197 43q0.3 1.3 0.7 2.7c1.8 6.8 3.6 13.5 5.7 20.2q0.3 1 0.7 2 1.3 4.1 2.6 8.3c3 9.1 5.1 17.1 4.3 26.8-4.4-1.7-7.1-4.9-10.3-8.2q-0.9-0.9-1.9-1.8-2.9-2.9-5.7-5.9-2.9-2.9-5.8-5.8-1.8-1.8-3.6-3.6c-3.1-3.2-6.2-6-9.7-8.7q-2-2-3.8-4.1-0.9-1-1.8-2.1c-1.4-1.8-1.4-1.8-1.4-3.8 2.1-1.5 2.1-1.5 5.1-3.2q1.6-0.9 3.2-1.9 1.7-0.9 3.5-1.9 1.6-1 3.3-1.9c12.3-7.1 12.3-7.1 14.9-7.1z" />
+										<path class="s46"
+											d="m45 192c3.3 1.1 4 1.9 6.2 4.6 3.6 4.2 7.5 8.2 11.5 12.1q2.1 2.1 4.3 4.2 3.3 3.3 6.7 6.6 3.3 3.3 6.5 6.5 1.1 1 2.1 2 0.9 0.9 1.9 1.8 0.8 0.9 1.6 1.7c1.2 1.5 1.2 1.5 1.2 4.5-12.5-0.9-24.5-4.7-36.3-8.8-5-1.6-10-2.9-15.1-4.2q-1.3-0.5-2.6-1c-1.3-4-0.3-5.2 1.5-8.9q0.8-1.8 1.6-3.6 0.9-1.8 1.8-3.6 0.8-1.9 1.7-3.7c4.2-9 4.2-9 5.4-10.2z" />
+										<path class="s47"
+											d="m17 262c9.7 4.4 19.1 9 28.4 14.1 1.4 0.8 1.4 0.8 2.8 1.5q3.9 2.2 7.8 4.4 1.4 0.8 2.9 1.6 1.4 0.7 2.8 1.5 1.2 0.7 2.5 1.4 0.9 0.7 1.8 1.5 0 2 0 4c-18.1 0-36.3 0-55 0 1.1-11.3 1.1-11.3 2.2-15.4q0.3-1.3 0.7-2.6 0.3-1.3 0.7-2.6 0.3-1.4 0.7-2.8 0.8-3.3 1.7-6.6z" />
+										<path class="s48"
+											d="m517 43c5.5 1.6 10.3 4.1 15.3 6.9q1.2 0.6 2.4 1.3c1.2 0.6 1.2 0.6 2.4 1.3q1 0.6 2.1 1.2c1.8 1.3 1.8 1.3 3.8 5.3-12.2 12.2-24.4 24.4-37 37q-1.5-0.5-3-1c0.2-9.6 2.9-18.1 5.9-27.1q0.7-2.1 1.3-4.3 3.3-10.3 6.8-20.6z" />
+										<path class="s49"
+											d="m265 17c0 19.5 0 38.9 0 59-2.7-2.7-4.1-4.7-6-8q-0.8-1.5-1.7-3.1-0.9-1.6-1.8-3.3-0.9-1.6-1.9-3.3-6.1-11.1-12-22.2-0.7-1.4-1.4-2.7-0.6-1.2-1.3-2.5-0.5-1-1.1-2.1c-0.8-1.8-0.8-1.8-0.8-3.8 20.2-8 20.2-8 28-8z" />
+										<path class="s50"
+											d="m120 349c1.6 2.4 2.7 4.5 3.9 7.1q0.5 1.3 1.1 2.5 0.5 1.3 1.1 2.7c5.9 13 11.9 25.4 20.9 36.7q0.9 1.1 1.8 2.3c11.8 14.5 29.8 23.5 48.2 25.7 13.8 0.9 26.6-1.1 40-4q1.1-0.2 2.3-0.5c9.8-2.1 19.3-4.8 28.9-7.6q1.3-0.3 2.6-0.7 1.1-0.4 2.3-0.7c1.9-0.5 1.9-0.5 3.9-0.5-0.9 2.4-1.5 3.7-3.8 5.1-2.4 1-4.8 1.6-7.5 2.2-4.2 1-8.3 2.2-12.4 3.5-26.3 8.7-56.7 11.7-82.8 0.7-2.6-1.3-5.1-2.8-7.5-4.5-1.1-0.7-1.1-0.7-2.2-1.5-2-1.4-3.9-3-5.8-4.5q-0.8-0.6-1.7-1.2c-12.3-9.6-21.9-25.7-28.3-39.8q0-1.5 0-3-1 0-2 0 0.2 1.6 0.4 3.3c1.5 11.3 1.8 22.3 1.6 33.7q-0.5 0-1 0-0.1-0.9-0.1-1.8c-0.4-4.7-1.1-8.9-2.4-13.4-2.2-8.3-1.8-16.6-1.7-25.1q0-2.4 0.1-4.8 0-6 0.1-11.9z" />
+										<path class="s51"
+											d="m358.4 225.9c1.3 0 1.3 0 2.6 0q3 0 6 0.1c-2.8 1.5-5.2 2.4-8.4 2.9q-1.3 0.2-2.7 0.4-1.5 0.2-3.1 0.4-1.6 0.3-3.3 0.6c-14.4 2.1-28.9 3.7-43.4 5.5-15.4 1.8-30.7 3.9-46.1 6.2q-1.3 0.2-2.6 0.4c-40.6 6-82.7 13.7-117.4 36.6-2.8 1.9-2.8 1.9-5 3q-1-0.5-2-1 0.7-1.9 1.4-3.8 0.4-1.1 0.8-2.2c2.4-2.8 4.9-3.2 8.4-4.2 3.9-1.3 7.2-3.4 10.7-5.6 9.8-5.6 19.9-9.1 30.7-12.2q1.4-0.4 2.8-0.8c44.3-12.6 91-17.4 136.6-23.1q6.6-0.8 13.1-1.7c7.1-1 13.8-1.7 20.9-1.5z" />
+										<path class="s52"
+											d="m445 15c19 5 19 5 26 8-5.3 15.9-15 30.7-25 44q-0.5 0-1 0c0-17.2 0-34.3 0-52z" />
+										<path class="s53"
+											d="m694 257c2 1 2 1 2.7 2.8q0.3 1.1 0.6 2.3 0.3 1.2 0.7 2.5c0.3 1.3 0.3 1.3 0.6 2.7 0.4 1.2 0.4 1.2 0.7 2.6 1.1 4.3 1.7 7.6 1.7 12.1-15.8 0-31.7 0-48 0q0-1.5 0-3 1.2-0.6 2.4-1.3 4.4-2.3 8.8-4.7 2-1 3.9-2.1 1.8-1 3.7-1.9 1.8-1 3.7-2 4.6-2.5 9.3-5.1c0.9-0.5 0.9-0.5 1.8-1q2.4-1.4 4.9-2.7 1.2-0.6 2.5-1.2z" />
+										<path class="s54"
+											d="m669 191q2.5 5.2 5 10.4 0.7 1.4 1.4 3 0.7 1.4 1.4 2.8 0.6 1.3 1.3 2.6c0.9 2.2 0.9 2.2 0.9 4.2-7.7 2.4-15.4 4.5-23.1 6.6q-1.7 0.5-3.4 1c-5.9 1.6-11.5 2.9-17.5 3.4 0.6-3.2 1.5-4.9 3.8-7.2q0.9-0.9 1.8-1.8 1-1 2-2 0.9-0.9 1.9-2 2.1-2 4.2-4.1 3.2-3.2 6.4-6.4 2-2.1 4.1-4.1c0.9-0.9 0.9-0.9 1.9-1.9q0.9-0.9 1.8-1.8 0.8-0.8 1.6-1.6c1.5-1.1 1.5-1.1 4.5-1.1z" />
+										<path class="s55"
+											d="m507 179c12.4 3.3 21.6 16.7 29.5 26.2q1.6 1.9 3.2 3.7 0.8 0.9 1.6 1.8 0.8 0.8 1.5 1.6c2 2.8 2.1 5.3 2.2 8.7-4.1-3.4-8-7-11.8-10.8-4.2-4.3-8.6-8.1-13.3-11.8-3.2-2.7-6.3-5.4-9.4-8.3-0.8-0.7-0.8-0.7-1.5-1.4-2.4-2.2-4.7-4.4-7-6.7q1-0.2 1.9-0.4c1.1-0.3 1.1-0.3 2.1-0.6q0.5-1 1-2z" />
+										<path class="s56"
+											d="m672.5 462.9q1.8 0 3.6 0c1.9 0 1.9 0 3.8 0q1.9 0 3.8 0.1 4.6 0 9.3 0-0.7 2.6-1.4 5.2c-0.4 1.4-0.4 1.4-0.7 2.9-0.8 2.7-1.8 5.3-2.9 7.9-4-0.6-7-1.8-10.5-3.7q-1.5-0.8-3.1-1.7-1.6-0.8-3.2-1.7-1.6-0.8-3.3-1.7-3.9-2.1-7.9-4.2 0-1 0-2c4.2-0.8 8.2-1.1 12.5-1.1z" />
+										<path class="s57"
+											d="m22 465c9.6 0 19.1 0 29 0-1 4-1 4-2.9 5.5q-1.2 0.7-2.5 1.5c-1.3 0.8-1.3 0.8-2.7 1.6-1.3 0.8-1.3 0.8-2.8 1.6q-1.4 0.8-2.8 1.6c-6.8 4-6.8 4-10.3 5.2q-1.3-3.4-2.5-6.8-0.4-1-0.7-2c-1.1-2.8-1.8-5.1-1.8-8.2z" />
+										<path class="s58"
+											d="m75 518c-3.4 9.4-10.9 16.2-18 23-2.8-3.2-4.8-6.4-6.6-10.2q-0.7-1.3-1.4-2.7-0.5-1-1-2.1 5.6-2 11.3-4 1.5-0.6 3.2-1.2 1.5-0.5 3.1-1.1 1.4-0.5 2.8-1c2.6-0.7 2.6-0.7 6.6-0.7z" />
+										<path class="s59"
+											d="m637 518c6.6 0.6 12.7 2.2 19 4.1q1.4 0.4 2.9 0.8 3.6 1 7.1 2.1c-1.2 3.8-2.4 7-4.6 10.4q-0.7 1-1.4 2.1-0.5 0.7-1 1.5c-9-4-16.6-12.9-22-21z" />
+										<path class="s60"
+											d="m504 653c7.3 3.3 11.9 9 17 15-7.8 6-7.8 6-12 6q-1.3-3.3-2.5-6.6-0.7-1.8-1.4-3.7c-1.1-3.7-1.3-6.8-1.1-10.7z" />
+										<path class="s61"
+											d="m215 655c-0.4 7.5-1.2 14-4 21-4.6-0.5-8-1.8-12-4 1.3-2.9 2.7-5 5-7.2 0.9-0.9 0.9-0.9 1.7-1.8q0.9-0.8 1.9-1.7 0.9-0.9 1.8-1.9c4.5-4.4 4.5-4.4 5.6-4.4z" />
+										<path class="s62"
+											d="m449 676c4.1 3.3 5.8 4.8 8.3 9q0.8 1.3 1.6 2.6c1.1 2.4 1.1 2.4 1.1 6.4-4.1 1.5-6.5 2-11 2 0-6.6 0-13.2 0-20z" />
+										<path class="s63"
+											d="m354.1 381.8q1.7-0.1 3.5-0.1c4.5 0.4 7.8 1.9 11.3 4.9 2.6 5.6 1.1 12.5 0.1 18.4-3-3-2.7-6.6-3.1-10.6-0.3-2.8-0.6-5.6-0.9-8.4-7.9-0.3-15.8-0.7-24-1q-0.5-1-1-2c4.7-0.9 9.3-1.1 14.1-1.3z" />
+										<path class="s64"
+											d="m264 678q0.5 0 1 0c0 5.9 0 11.9 0 18-8-1-8-1-10-2 1.5-6.2 5.1-11.1 9-16z" />
+										<path class="s65"
+											d="m510 223c10.1-0.6 18.5 1 28 4-1 3-1 3-3.8 4.8-3.2 1.2-4.2 1.5-7.2 0.2q1-1.5 2-3c-3.2-1.5-6-2.2-9.5-2.5-3.5-0.3-6.3-1-9.5-2.5q0-0.5 0-1z" />
+										<path class="s66"
+											d="m593 282q0.5 0 1 0 0.1 3.3 0.1 6.6 0.1 1.9 0.1 3.8c-0.2 3.5-0.9 6.3-2.2 9.6q-0.5 0-1 0-0.5-3-1-6-2 0.5-4 1c2.8-10.8 2.8-10.8 7-15z" />
+										<path class="s67"
+											d="m115 283q0.5 0 1 0c0.3 6.6 0.3 6.6-2 10-5.1-0.5-9-3-13-6q0-0.5 0-1 1.8 0.1 3.7 0.1c3.5 0 6.1-0.5 9.3-2.1q0.5-0.5 1-1z" />
+										<path class="s68"
+											d="m519 236q-1.3 1.1-2.6 2.3c-2.7 2.4-2.7 2.4-2.3 4.9 0.9 2 0.9 2 2.9 3.8-4.6-0.4-7.6-0.9-11-4 1.1-3.1 2-4 4.8-5.8 3.1-1.1 5-1.5 8.2-1.2z" />
+										<path class="s69"
+											d="m214 547c7.3 1.8 13 6.5 18 12-6.6-0.8-12.2-4.6-17-9q-0.5-1.5-1-3z" />
+										<path class="s70"
+											d="m122 392q1.5 0 3 0c0 4.6 0 9.2 0 14q-0.5 0-1 0-0.1-1-0.2-2-0.1-1.4-0.2-2.8-0.2-1.3-0.3-2.6c-0.3-2.3-0.7-4.4-1.3-6.6z" />
+									</svg> </a>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-b24ea4a elementor-shape-rounded elementor-grid-0 e-grid-align-center elementor-widget elementor-widget-social-icons"
+					data-id="b24ea4a" data-element_type="widget" data-widget_type="social-icons.default">
+					<div class="elementor-widget-container">
+						<div class="elementor-social-icons-wrapper elementor-grid">
+							<span class="elementor-grid-item">
+								<a class="elementor-icon elementor-social-icon elementor-social-icon- elementor-repeater-item-a6268a0"
+									target="_blank">
+									<span class="elementor-screen-only"></span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="#fff"
+										fill-rule="evenodd" viewBox="0 0 252 300" class="chakra-icon custom-euf446">
+										<path
+											d="M151.818 106.866c9.177-4.576 20.854-11.312 32.545-20.541 2.465 5.119 2.735 9.586 1.465 13.193-.9 2.542-2.596 4.753-4.826 6.512-2.415 1.901-5.431 3.285-8.765 4.033-6.326 1.425-13.712.593-20.419-3.197m1.591 46.886l12.148 7.017c-24.804 13.902-31.547 39.716-39.557 64.859-8.009-25.143-14.753-50.957-39.556-64.859l12.148-7.017a5.95 5.95 0 003.84-5.845c-1.113-23.547 5.245-33.96 13.821-40.498 3.076-2.342 6.434-3.518 9.747-3.518s6.671 1.176 9.748 3.518c8.576 6.538 14.934 16.951 13.821 40.498a5.95 5.95 0 003.84 5.845zM126 0c14.042.377 28.119 3.103 40.336 8.406 8.46 3.677 16.354 8.534 23.502 14.342 3.228 2.622 5.886 5.155 8.814 8.071 7.897.273 19.438-8.5 24.796-16.709-9.221 30.23-51.299 65.929-80.43 79.589-.012-.005-.02-.012-.029-.018-5.228-3.992-11.108-5.988-16.989-5.988s-11.76 1.996-16.988 5.988c-.009.005-.017.014-.029.018-29.132-13.66-71.209-49.359-80.43-79.589 5.357 8.209 16.898 16.982 24.795 16.709 2.929-2.915 5.587-5.449 8.814-8.071C69.31 16.94 77.204 12.083 85.664 8.406 97.882 3.103 111.959.377 126 0m-25.818 106.866c-9.176-4.576-20.854-11.312-32.544-20.541-2.465 5.119-2.735 9.586-1.466 13.193.901 2.542 2.597 4.753 4.826 6.512 2.416 1.901 5.432 3.285 8.766 4.033 6.326 1.425 13.711.593 20.418-3.197" />
+										<path
+											d="M197.167 75.016c6.436-6.495 12.107-13.684 16.667-20.099l2.316 4.359c7.456 14.917 11.33 29.774 11.33 46.494l-.016 26.532.14 13.754c.54 33.766 7.846 67.929 24.396 99.193l-34.627-27.922-24.501 39.759-25.74-24.231L126 299.604l-41.132-66.748-25.739 24.231-24.501-39.759L0 245.25c16.55-31.264 23.856-65.427 24.397-99.193l.14-13.754-.016-26.532c0-16.721 3.873-31.578 11.331-46.494l2.315-4.359c4.56 6.415 10.23 13.603 16.667 20.099l-2.01 4.175c-3.905 8.109-5.198 17.176-2.156 25.799 1.961 5.554 5.54 10.317 10.154 13.953 4.48 3.531 9.782 5.911 15.333 7.161 3.616.814 7.3 1.149 10.96 1.035-.854 4.841-1.227 9.862-1.251 14.978L53.2 160.984l25.206 14.129a41.926 41.926 0 015.734 3.869c20.781 18.658 33.275 73.855 41.861 100.816 8.587-26.961 21.08-82.158 41.862-100.816a41.865 41.865 0 015.734-3.869l25.206-14.129-32.665-18.866c-.024-5.116-.397-10.137-1.251-14.978 3.66.114 7.344-.221 10.96-1.035 5.551-1.25 10.854-3.63 15.333-7.161 4.613-3.636 8.193-8.399 10.153-13.953 3.043-8.623 1.749-17.689-2.155-25.799l-2.01-4.175z" />
+									</svg> </a>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-681b277 elementor-shape-rounded elementor-grid-0 e-grid-align-center elementor-widget elementor-widget-social-icons"
+					data-id="681b277" data-element_type="widget" data-widget_type="social-icons.default">
+					<div class="elementor-widget-container">
+						<div class="elementor-social-icons-wrapper elementor-grid">
+							<span class="elementor-grid-item">
+								<a class="elementor-icon elementor-social-icon elementor-social-icon- elementor-repeater-item-a6268a0"
+									target="_blank">
+									<span class="elementor-screen-only"></span>
+									<svg xmlns="http://www.w3.org/2000/svg" fill="none" height="2500"
+										viewBox="0 -.058 754.779 867.058" width="2174">
+										<path clip-rule="evenodd"
+											d="m280.395 49.025c-51.649 26.905-93.905 49.672-93.896 50.598.023 2.39 123.959 65.156 128.358 65.003 2.001-.067 16.517-6.749 32.256-14.847l28.621-14.721 31.258 16.067 31.256 16.07 51.188-23.001c77.13-34.659 85.141-38.457 83.885-39.733-1.666-1.693-29.331-16.555-104.388-56.07-36.274-19.098-71.481-37.823-78.24-41.612-6.758-3.789-13.21-6.837-14.337-6.778s-44.311 22.12-95.961 49.024zm-226.532 117.306-53.766 27.772v121.886c0 67.038.706 121.885 1.572 121.885.863 0 27.316-11.467 58.783-25.482l57.213-25.482v-128.476l27.958 15.232a33224.294 33224.294 0 0 0 64.671 35.109l36.712 19.877 16.336-7.387a3822.03 3822.03 0 0 0 30.674-14.056c7.885-3.672 27.241-12.39 43.012-19.377 15.771-6.99 30.37-14.019 32.44-15.621 2.75-2.128-30.782-20.658-124.025-68.54-70.285-36.093-130.046-65.509-132.802-65.368s-29.206 12.752-58.778 28.028zm529.148 7.799c-36.618 16.531-66.604 30.717-66.638 31.526-.032.808 19.926 12.675 44.354 26.367 24.426 13.695 44.412 25.632 44.412 26.531 0 .897-21.615 11.37-48.03 23.278-26.419 11.905-93.194 42.061-148.393 67.014l-184.954 83.602c-46.525 21.032-88.462 39.989-93.193 42.132-95.03 43.019-121.15 54.956-124.737 57.005-3.607 2.063-4.424 14.048-5.066 74.201l-.766 71.744 48.08 24.498 48.079 24.497 66.669-30.088c36.669-16.547 66.669-30.953 66.669-32.014 0-1.058-6.776-5.473-15.054-9.815-8.282-4.342-25.378-13.954-37.995-21.364-12.616-7.411-25.196-14.21-27.958-15.112-2.761-.899-4.98-2.472-4.935-3.498.046-1.023 29.404-14.968 65.236-30.991 69.597-31.117 122.858-55.1 237.202-106.809a305577.39 305577.39 0 0 1 153.411-69.31c44.948-20.288 97.208-43.983 116.134-52.655l34.41-15.767.765-72.561.769-72.558-48.765-25.03c-26.822-13.765-49.748-24.994-50.95-24.953-1.201.038-32.141 13.595-68.756 30.13zm153.872 261.772c-7.186 3.51-21.38 10.082-31.542 14.603s-29.446 13.222-42.852 19.339l-24.374 11.117-.556 63.702c-.307 35.035-1.597 63.545-2.867 63.36-2.885-.429-48.567-23.857-94.487-48.463-33.143-17.757-35.225-18.463-43.013-14.606-4.502 2.231-31.413 14.3-59.801 26.825-28.389 12.523-52.541 23.587-53.677 24.589-1.133 1 56.002 31.967 126.97 68.819l129.029 67.003 55.119-28.513c30.312-15.68 56.088-29.983 57.275-31.782 2.672-4.045 2.443-242.93-.232-242.607-1.058.127-7.806 3.104-14.992 6.614zm-305.227 280.391a25013.26 25013.26 0 0 0 -28.675 12.349c-28.856 12.484-23.201 12.898-57.531-4.192-22.865-11.382-32.721-14.894-36.999-13.189-3.209 1.278-30.826 13.703-61.376 27.61-30.548 13.907-56.602 25.285-57.898 25.285-12.817 0 8.491 12.731 90.714 54.207l96.428 48.637 40.572-20.03c22.315-11.017 67.323-33.078 100.021-49.024 32.695-15.95 59.042-29.413 58.549-29.921-.497-.506-27.893-14.574-60.883-31.262l-59.982-30.338z"
+											fill="#ffffff" fill-rule="evenodd" />
+									</svg> </a>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="elementor-element elementor-element-348753a e-flex e-con-boxed e-con e-parent" data-id="348753a"
+			data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="e-con-inner">
+			</div>
+		</div>
+		<div class="elementor-element elementor-element-c9003e4 e-flex e-con-boxed e-con e-parent" data-id="c9003e4"
+			data-element_type="container" id="about"
+			data-settings="{&quot;background_background&quot;:&quot;video&quot;,&quot;background_video_link&quot;:&quot;https:\/\/vimeo.com\/1010208174?share=copy#t=0&quot;,&quot;background_play_on_mobile&quot;:&quot;yes&quot;}">
+			<div class="e-con-inner">
+				<div class="elementor-background-video-container">
+					<div class="elementor-background-video-embed"></div>
+				</div>
+				<div class="elementor-element elementor-element-704b3b0 e-con-full e-flex e-con e-child"
+					data-id="704b3b0" data-element_type="container"
+					data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="elementor-element elementor-element-3df4838 e-con-full e-flex e-con e-child"
+						data-id="3df4838" data-element_type="container"
+						data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-element elementor-element-53f8904 elementor-widget elementor-widget-heading"
+							data-id="53f8904" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h2 class="elementor-heading-title elementor-size-default">who is $SUIMARIO</h2>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-596a106 elementor-widget elementor-widget-heading"
+							data-id="596a106" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h2 class="elementor-heading-title elementor-size-default">SUIMARIO, INSPIRED BY
+									EVERYONE'S FAVORITE CHARACTER, SUIMARIO, USES THE POWER OF THE SUI TO BATTLE EVIL
+									CREATURES FROM THE DARKEST DEPTHS OF THE UNIVERSE. HE IS A HERO WHO WILL BE
+									REMEMBERED FOREVER! </h2>
+							</div>
+						</div>
+					</div>
+					<div class="elementor-element elementor-element-089aa58 e-con-full e-flex e-con e-child"
+						data-id="089aa58" data-element_type="container"
+						data-settings="{&quot;background_background&quot;:&quot;video&quot;,&quot;background_video_link&quot;:&quot;https:\/\/vimeo.com\/1011032349?share=copy#t=0&quot;,&quot;background_play_on_mobile&quot;:&quot;yes&quot;}">
+						<div class="elementor-background-video-container">
+							<div class="elementor-background-video-embed"></div>
+						</div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-d0f3e7d e-con-full e-flex e-con e-child"
+					data-id="d0f3e7d" data-element_type="container"
+					data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="elementor-element elementor-element-e1f4f04 e-con-full e-flex e-con e-child"
+						data-id="e1f4f04" data-element_type="container"
+						data-settings="{&quot;background_background&quot;:&quot;video&quot;,&quot;background_video_link&quot;:&quot;https:\/\/vimeo.com\/1011031963?share=copy#t=0&quot;,&quot;background_play_on_mobile&quot;:&quot;yes&quot;}">
+						<div class="elementor-background-video-container">
+							<div class="elementor-background-video-embed"></div>
+						</div>
+					</div>
+					<div class="elementor-element elementor-element-470c124 e-con-full e-flex e-con e-child"
+						data-id="470c124" data-element_type="container"
+						data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-element elementor-element-e52c00e elementor-widget elementor-widget-heading"
+							data-id="e52c00e" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h2 class="elementor-heading-title elementor-size-default">WHAT IS $SUIMARIO'S GOAL?
+								</h2>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-81b9964 elementor-widget elementor-widget-heading"
+							data-id="81b9964" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h2 class="elementor-heading-title elementor-size-default">HIS GOAL IS TO DIVE DEEP INTO
+									YOUR MEMORIES AND REMIND YOU OF THE GREAT TIMES YOU HAD WITH MARIO. HE SEEKS YOUR
+									SUPPORT TO FIGHT AND CONQUER. SUIMARIO IS DESTINED TO REACH THE ALL-TIME HIGHS OF
+									EVERY MEME COIN CHART AND MAKE EVERYONE REMEMBER JUST HOW GREAT MARIO IS!
+								</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-a8b958f e-con-full e-flex e-con e-child"
+					data-id="a8b958f" data-element_type="container"
+					data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="elementor-element elementor-element-e8d7eab e-con-full e-flex e-con e-child"
+						data-id="e8d7eab" data-element_type="container"
+						data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-element elementor-element-5c37b63 elementor-widget elementor-widget-heading"
+							data-id="5c37b63" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h2 class="elementor-heading-title elementor-size-default">THE FUTURE OF $SUIMARIO!</h2>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-dd4ca0d elementor-widget elementor-widget-heading"
+							data-id="dd4ca0d" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h2 class="elementor-heading-title elementor-size-default">SUIMARIO WILL STRIVE TO
+									BECOME THE MOST WELL-KNOWN CRYPTO MEME CHARACTER ON THE SUI BLOCKCHAIN AND, SOON
+									AFTER, THE ENTIRE CRYPTO MEME WORLD. HE WON'T LET ANYTHING OR ANYONE STAND IN HIS
+									WAY. JOIN HIM IN SHAPING THE FUTURE OF THE MEME GALAXY!
+								</h2>
+							</div>
+						</div>
+					</div>
+					<div class="elementor-element elementor-element-089aa58 e-con-full e-flex e-con e-child"
+						data-id="089aa58" data-element_type="container"
+						data-settings="{&quot;background_background&quot;:&quot;video&quot;,&quot;background_video_link&quot;:&quot;https:\/\/vimeo.com\/1011032349?share=copy#t=0&quot;,&quot;background_play_on_mobile&quot;:&quot;yes&quot;}">
+						<div class="elementor-background-video-container">
+							<div class="elementor-background-video-embed"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="elementor-element elementor-element-a63c592 e-flex e-con-boxed e-con e-parent" data-id="a63c592"
+			data-element_type="container"
+			data-settings="{&quot;background_background&quot;:&quot;video&quot;,&quot;background_video_link&quot;:&quot;https:\/\/vimeo.com\/1011032601?share=copy#t=0&quot;,&quot;background_play_on_mobile&quot;:&quot;yes&quot;}">
+			<div class="e-con-inner">
+				<div class="elementor-background-video-container">
+					<div class="elementor-background-video-embed"></div>
+				</div>
+				<div class="elementor-element elementor-element-cc61474 e-con-full e-flex e-con e-child"
+					data-id="cc61474" data-element_type="container" id="roadmap"
+					data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="elementor-element elementor-element-b72334e elementor-widget elementor-widget-heading"
+						data-id="b72334e" data-element_type="widget" data-widget_type="heading.default">
+						<div class="elementor-widget-container">
+							<h2 class="elementor-heading-title elementor-size-default">roadmap</h2>
+						</div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-09853da e-con-full e-flex e-con e-child"
+					data-id="09853da" data-element_type="container"
+					data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="elementor-element elementor-element-d3acbfc e-con-full e-flex e-con e-child"
+						data-id="d3acbfc" data-element_type="container"
+						data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-element elementor-element-1cd67a5 elementor-widget elementor-widget-heading"
+							data-id="1cd67a5" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h2 class="elementor-heading-title elementor-size-default">STAGE 1</h2>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-05b5fda elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+							data-id="05b5fda" data-element_type="widget" data-widget_type="icon-list.default">
+							<div class="elementor-widget-container">
+								<ul class="elementor-icon-list-items">
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<i aria-hidden="true" class="fas fa-check"></i> </span>
+										<span class="elementor-icon-list-text">WEBSITE</span>
+									</li>
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<i aria-hidden="true" class="fas fa-check"></i> </span>
+										<span class="elementor-icon-list-text">TWITTER</span>
+									</li>
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<i aria-hidden="true" class="fas fa-check"></i> </span>
+										<span class="elementor-icon-list-text">TELEGRAM</span>
+									</li>
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<i aria-hidden="true" class="fas fa-check"></i> </span>
+										<span class="elementor-icon-list-text">LAUNCH DATE ANNOUNCED</span>
+									</li>
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<i aria-hidden="true" class="fas fa-check"></i> </span>
+										<span class="elementor-icon-list-text">PRE-LAUNCH MARKETING</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="elementor-element elementor-element-13c29af e-con-full e-flex e-con e-child"
+						data-id="13c29af" data-element_type="container"
+						data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-element elementor-element-6d814f8 elementor-widget elementor-widget-heading"
+							data-id="6d814f8" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h2 class="elementor-heading-title elementor-size-default">STAGE 2</h2>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-510f560 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+							data-id="510f560" data-element_type="widget" data-widget_type="icon-list.default">
+							<div class="elementor-widget-container">
+								<ul class="elementor-icon-list-items">
+
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<i aria-hidden="true" class="fas fa-seedling"></i> </span>
+										<span class="elementor-icon-list-text">100K MC DEX UPDATE</span>
+									</li>
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<i aria-hidden="true" class="fas fa-seedling"></i> </span>
+										<span class="elementor-icon-list-text">300K MC DEX ADS</span>
+									</li>
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<i aria-hidden="true" class="fas fa-seedling"></i> </span>
+										<span class="elementor-icon-list-text">500K MC ADS IN MULTIPLE SMALL MEME COIN
+											WEBSITES</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="elementor-element elementor-element-3b84f4c e-con-full e-flex e-con e-child"
+						data-id="3b84f4c" data-element_type="container"
+						data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-element elementor-element-c1ae67f elementor-widget elementor-widget-heading"
+							data-id="c1ae67f" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h2 class="elementor-heading-title elementor-size-default">STAGE 3</h2>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-8ce144f elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+							data-id="8ce144f" data-element_type="widget" data-widget_type="icon-list.default">
+							<div class="elementor-widget-container">
+								<ul class="elementor-icon-list-items">
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<i aria-hidden="true" class="fas fa-seedling"></i> </span>
+										<span class="elementor-icon-list-text">1M MC DEX TRENDING BAR ADVERTISING</span>
+									</li>
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<i aria-hidden="true" class="fas fa-seedling"></i> </span>
+										<span class="elementor-icon-list-text">2M MC TWITTER - VERIFIED
+											ORGANIZATION</span>
+									</li>
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<i aria-hidden="true" class="fas fa-seedling"></i> </span>
+										<span class="elementor-icon-list-text">5M MC $15,000 GIVEAWAY</span>
+									</li>
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<i aria-hidden="true" class="fas fa-seedling"></i> </span>
+										<span class="elementor-icon-list-text">10M MC ANIMATED VIDEO CONTEST - $30,000
+											PRIZE</span>
+									</li>
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<i aria-hidden="true" class="fas fa-seedling"></i> </span>
+										<span class="elementor-icon-list-text">20M MC FIRST EXCHANGE LISTING
+											INFORMATION</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="elementor-element elementor-element-6eff1a0 e-con-full e-flex e-con e-child"
+						data-id="6eff1a0" data-element_type="container"
+						data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-element elementor-element-abd0044 elementor-widget elementor-widget-heading"
+							data-id="abd0044" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h2 class="elementor-heading-title elementor-size-default">STAGE 4</h2>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-8bdfdfb elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+							data-id="8bdfdfb" data-element_type="widget" data-widget_type="icon-list.default">
+							<div class="elementor-widget-container">
+								<ul class="elementor-icon-list-items">
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<i aria-hidden="true" class="fas fa-seedling"></i> </span>
+										<span class="elementor-icon-list-text">35M MC GETTING LISTED ON THE FIRST
+											EXCHANGE</span>
+									</li>
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<i aria-hidden="true" class="fas fa-seedling"></i> </span>
+										<span class="elementor-icon-list-text">50M MC GETTING LISTED ON A SECOND
+											EXCHANGE</span>
+									</li>
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<i aria-hidden="true" class="fas fa-seedling"></i> </span>
+										<span class="elementor-icon-list-text">100M MC DESIGN CONTEST WITH A $60,000
+											PRIZE FOR 15 DESIGNS</span>
+									</li>
+									<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-icon">
+											<i aria-hidden="true" class="fas fa-seedling"></i> </span>
+										<span class="elementor-icon-list-text">200M MC $90,000 GIVEAWAY + LISTING STAGE
+											5</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-f5a0290 e-con-full e-flex e-con e-child"
+					data-id="f5a0290" data-element_type="container" id="tokenomics"
+					data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="elementor-element elementor-element-aaa2796 elementor-widget elementor-widget-heading"
+						data-id="aaa2796" data-element_type="widget" data-widget_type="heading.default">
+						<div class="elementor-widget-container">
+							<h2 class="elementor-heading-title elementor-size-default">MARI-O-NOMICS</h2>
+						</div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-d83f8d6 e-con-full e-flex e-con e-child"
+					data-id="d83f8d6" data-element_type="container">
+					<div class="elementor-element elementor-element-fe16a3e e-con-full e-flex e-con e-child"
+						data-id="fe16a3e" data-element_type="container"
+						data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-element elementor-element-8d94951 e-con-full e-flex e-con e-child"
+							data-id="8d94951" data-element_type="container"
+							data-settings="{&quot;background_background&quot;:&quot;video&quot;,&quot;background_video_link&quot;:&quot;https:\/\/vimeo.com\/1010201795?share=copy#t=0&quot;,&quot;background_play_on_mobile&quot;:&quot;yes&quot;}">
+							<div class="elementor-background-video-container">
+								<div class="elementor-background-video-embed"></div>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-0ffc2f1 elementor-widget elementor-widget-image-box"
+							data-id="0ffc2f1" data-element_type="widget" data-widget_type="image-box.default">
+							<div class="elementor-widget-container">
+								<div class="elementor-image-box-wrapper">
+									<div class="elementor-image-box-content">
+										<h3 class="elementor-image-box-title">Initial supply</h3>
+										<p class="elementor-image-box-description">10b</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="elementor-element elementor-element-37f5c63 e-con-full e-flex e-con e-child"
+						data-id="37f5c63" data-element_type="container"
+						data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-element elementor-element-f2b06e1 e-con-full e-flex e-con e-child"
+							data-id="f2b06e1" data-element_type="container"
+							data-settings="{&quot;background_background&quot;:&quot;video&quot;,&quot;background_video_link&quot;:&quot;https:\/\/vimeo.com\/1010206967?share=copy#t=0&quot;,&quot;background_play_on_mobile&quot;:&quot;yes&quot;}">
+							<div class="elementor-background-video-container">
+								<div class="elementor-background-video-embed"></div>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-2dec0bd elementor-widget elementor-widget-image-box"
+							data-id="2dec0bd" data-element_type="widget" data-widget_type="image-box.default">
+							<div class="elementor-widget-container">
+								<div class="elementor-image-box-wrapper">
+									<div class="elementor-image-box-content">
+										<h3 class="elementor-image-box-title">CIRC. SUPPLY</h3>
+										<p class="elementor-image-box-description">10b</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="elementor-element elementor-element-fd5f06c e-con-full e-flex e-con e-child"
+						data-id="fd5f06c" data-element_type="container"
+						data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-element elementor-element-bd5e2d1 e-con-full e-flex e-con e-child"
+							data-id="bd5e2d1" data-element_type="container"
+							data-settings="{&quot;background_background&quot;:&quot;video&quot;,&quot;background_video_link&quot;:&quot;https:\/\/vimeo.com\/1010207403?share=copy#t=0&quot;,&quot;background_play_on_mobile&quot;:&quot;yes&quot;}">
+							<div class="elementor-background-video-container">
+								<div class="elementor-background-video-embed"></div>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-41cc5a0 elementor-widget elementor-widget-image-box"
+							data-id="41cc5a0" data-element_type="widget" data-widget_type="image-box.default">
+							<div class="elementor-widget-container">
+								<div class="elementor-image-box-wrapper">
+									<div class="elementor-image-box-content">
+										<h3 class="elementor-image-box-title">LIQUIDITY</h3>
+										<p class="elementor-image-box-description">BURNT</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="elementor-element elementor-element-2755ec7 e-flex e-con-boxed e-con e-parent" data-id="2755ec7"
+			data-element_type="container"
+			data-settings="{&quot;background_background&quot;:&quot;video&quot;,&quot;background_video_link&quot;:&quot;https:\/\/vimeo.com\/1010209039?share=copy#t=0&quot;,&quot;background_play_on_mobile&quot;:&quot;yes&quot;}">
+			<div class="e-con-inner">
+				<div class="elementor-background-video-container">
+					<div class="elementor-background-video-embed"></div>
+				</div>
+				<div class="elementor-element elementor-element-ea6cd17 e-con-full e-flex e-con e-child"
+					data-id="ea6cd17" data-element_type="container" id="buy"
+					data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="elementor-element elementor-element-87ca6e5 elementor-widget elementor-widget-heading"
+						data-id="87ca6e5" data-element_type="widget" data-widget_type="heading.default">
+						<div class="elementor-widget-container">
+							<h2 class="elementor-heading-title elementor-size-default">how to buy</h2>
+						</div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-7d34073 e-con-full e-flex e-con e-child"
+					data-id="7d34073" data-element_type="container"
+					data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="elementor-element elementor-element-663402d e-con-full e-flex e-con e-child"
+						data-id="663402d" data-element_type="container"
+						data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-element elementor-element-b0b3ef3 elementor-view-stacked elementor-shape-square elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box"
+							data-id="b0b3ef3" data-element_type="widget" data-widget_type="icon-box.default">
+							<div class="elementor-widget-container">
+								<div class="elementor-icon-box-wrapper">
+
+									<div class="elementor-icon-box-icon">
+										<span class="elementor-icon elementor-animation-">
+											<i aria-hidden="true" class="fas fa-user-check"></i> </span>
+									</div>
+
+									<div class="elementor-icon-box-content">
+
+										<h3 class="elementor-icon-box-title">
+											<span>
+												create A WALLET </span>
+										</h3>
+
+
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-5dc7082 elementor-widget elementor-widget-heading"
+							data-id="5dc7082" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h2 class="elementor-heading-title elementor-size-default">Download the Sui Wallet
+									extension from the official website and install it in your Chrome browser. Fund your
+									wallet by transferring SUI from an exchange like Binance, Bybit, MEXS, or from
+									another wallet you already have.</h2>
+							</div>
+						</div>
+					</div>
+					<div class="elementor-element elementor-element-cd27f63 e-con-full e-flex e-con e-child"
+						data-id="cd27f63" data-element_type="container"
+						data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-element elementor-element-887a57b elementor-view-stacked elementor-shape-square elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box"
+							data-id="887a57b" data-element_type="widget" data-widget_type="icon-box.default">
+							<div class="elementor-widget-container">
+								<div class="elementor-icon-box-wrapper">
+
+									<div class="elementor-icon-box-icon">
+										<span class="elementor-icon elementor-animation-">
+											<i aria-hidden="true" class="fas fa-link"></i> </span>
+									</div>
+
+									<div class="elementor-icon-box-content">
+
+										<h3 class="elementor-icon-box-title">
+											<span>
+												CONNECT TO MovePump </span>
+										</h3>
+
+
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-a93c2c3 elementor-widget elementor-widget-heading"
+							data-id="a93c2c3" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h2 class="elementor-heading-title elementor-size-default">Connect your Sui Wallet
+									Wallet
+									to https://movepump.com/, then locate the official $SUIMARIO Meme Coin.
+
+
+								</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-1abc65b e-con-full e-flex e-con e-child"
+					data-id="1abc65b" data-element_type="container"
+					data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="elementor-element elementor-element-fb61fa2 e-con-full e-flex e-con e-child"
+						data-id="fb61fa2" data-element_type="container"
+						data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-element elementor-element-f6d5be2 elementor-view-stacked elementor-shape-square elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box"
+							data-id="f6d5be2" data-element_type="widget" data-widget_type="icon-box.default">
+							<div class="elementor-widget-container">
+								<div class="elementor-icon-box-wrapper">
+
+									<div class="elementor-icon-box-icon">
+										<span class="elementor-icon elementor-animation-">
+											<i aria-hidden="true" class="fas fa-exchange-alt"></i> </span>
+									</div>
+
+									<div class="elementor-icon-box-content">
+
+										<h3 class="elementor-icon-box-title">
+											<span>
+												BUY $SUIMARIO </span>
+										</h3>
+
+
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-f2c762b elementor-widget elementor-widget-heading"
+							data-id="f2c762b" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h2 class="elementor-heading-title elementor-size-default">Once you have found the
+									official $SUIMARIO Meme Coin on the MovePump website or by using the 'BUY' buttons
+									on
+									our website, enter the amount of SUI you wish to use for your purchase. Then, simply
+									click 'BUY'.</h2>
+							</div>
+						</div>
+					</div>
+					<div class="elementor-element elementor-element-f97053e e-con-full e-flex e-con e-child"
+						data-id="f97053e" data-element_type="container"
+						data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-element elementor-element-751caaf elementor-view-stacked elementor-shape-square elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box"
+							data-id="751caaf" data-element_type="widget" data-widget_type="icon-box.default">
+							<div class="elementor-widget-container">
+								<div class="elementor-icon-box-wrapper">
+
+									<div class="elementor-icon-box-icon">
+										<span class="elementor-icon elementor-animation-">
+											<i aria-hidden="true" class="far fa-check-square"></i> </span>
+									</div>
+
+									<div class="elementor-icon-box-content">
+
+										<h3 class="elementor-icon-box-title">
+											<span>
+												VERIFY and MANAGE TOKENS </span>
+										</h3>
+
+
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-1babed1 elementor-widget elementor-widget-heading"
+							data-id="1babed1" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h2 class="elementor-heading-title elementor-size-default">Verify that you have
+									purchased the correct amount of $SUIMARIO coins by either selecting the 'SELL'
+									option to check your available balance or by reviewing your Sui Wallet Wallet.</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-6292d9f e-con-full e-flex e-con e-child"
+					data-id="6292d9f" data-element_type="container"
+					data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="elementor-element elementor-element-1ac9494 elementor-widget elementor-widget-ctc_copy_button"
+						data-id="1ac9494" data-element_type="widget" data-widget_type="ctc_copy_button.default">
+						<div class="elementor-widget-container">
+							<div class="ctc-block ctc-copy-button">
+								<div class="ctc-block-actions">
+									<button class="ctc-block-copy ctc-with-icon" copy-as-raw="yes"
+										data-copied="Copied!">
+										<span class="ctc-button-text">Contract Address</span><svg aria-hidden="true"
+											focusable="false" role="img" class="copy-icon" viewBox="0 0 16 16"
+											width="16" height="16" fill="currentColor">
+											<path
+												d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z" />
+											<path
+												d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z" />
+										</svg><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1"
+											width="16" data-view-component="true" class="check-icon"
+											fill="currentColor">
+											<path
+												d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" />
+										</svg> </button>
+								</div>
+								<textarea selection-target class="ctc-copy-content"
+									style="display: none;">0xb72688e4685bee43f0dc24c5408646b0a9ef14ed655f8d4b25b0599dc75d2640::mario::MARIO</textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="elementor-element elementor-element-6296a1b e-con-full e-flex e-con e-parent" data-id="6296a1b"
+			data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-element elementor-element-8df5fa8 elementor-widget elementor-widget-heading"
+				data-id="8df5fa8" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default"> Please note that $SUIMARIO does not
+						constitute an investment. It is a meme coin created for entertainment purposes only. The value
+						of $SUIMARIO can be highly volatile, and there is a risk of losing your money. Always do your
+						research and consider consulting with a financial advisor before engaging in any cryptocurrency
+						transactions. $SUIMARIO is designed to make people laugh and remember the good old days with
+						Mario. No financial gain is expected from this. Please participate at your own risk.</p>
+				</div>
+			</div>
+			<div class="elementor-element elementor-element-7bd6592 e-con-full e-flex e-con e-child" data-id="7bd6592"
+				data-element_type="container">
+				<div class="elementor-element elementor-element-adc8c64 elementor-widget elementor-widget-heading"
+					data-id="adc8c64" data-element_type="widget" data-widget_type="heading.default">
+					<div class="elementor-widget-container">
+						<p class="elementor-heading-title elementor-size-default">All Rights Reserved for $Suimario 2024
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		const lazyloadRunObserver = () => {
+			const lazyloadBackgrounds = document.querySelectorAll(`.e-con.e-parent:not(.e-lazyloaded)`);
+			const lazyloadBackgroundObserver = new IntersectionObserver((entries) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						let lazyloadBackground = entry.target;
+						if (lazyloadBackground) {
+							lazyloadBackground.classList.add('e-lazyloaded');
+						}
+						lazyloadBackgroundObserver.unobserve(entry.target);
+					}
+				});
+			}, { rootMargin: '200px 0px 200px 0px' });
+			lazyloadBackgrounds.forEach((lazyloadBackground) => {
+				lazyloadBackgroundObserver.observe(lazyloadBackground);
+			});
+		};
+		const events = [
+			'DOMContentLoaded',
+			'elementor/lazyload/observe',
+		];
+		events.forEach((event) => {
+			document.addEventListener(event, lazyloadRunObserver);
+		});
+	</script>
+	<link rel="stylesheet" id="ctc-blocks-core-css" href="css/style_7.css" media="all">
+	<link rel="stylesheet" id="ctc-el-email-sample-css" href="css/style_15.css" media="all">
+	<link rel="stylesheet" id="ctc-blocks-css" href="css/style_7.css" media="all">
+	<link rel="stylesheet" id="ctc-el-email-address-css" href="css/style_11.css" media="all">
+	<link rel="stylesheet" id="ctc-el-phone-number-css" href="css/style_10.css" media="all">
+	<link rel="stylesheet" id="ctc-el-copy-icon-css" href="css/style_1.css" media="all">
+	<link rel="stylesheet" id="ctc-el-blockquote-css" href="css/style_4.css" media="all">
+	<link rel="stylesheet" id="ctc-el-code-snippet-css" href="css/style.css" media="all">
+	<link rel="stylesheet" id="ctc-el-message-css" href="css/style_14.css" media="all">
+	<link rel="stylesheet" id="ctc-el-wish-css" href="css/style_5.css" media="all">
+	<link rel="stylesheet" id="ctc-el-shayari-css" href="css/style_13.css" media="all">
+	<link rel="stylesheet" id="ctc-el-sms-css" href="css/style_2.css" media="all">
+	<link rel="stylesheet" id="ctc-el-deal-css" href="css/style_3.css" media="all">
+	<link rel="stylesheet" id="ctc-el-coupon-css" href="css/style_6.css" media="all">
+	<link rel="stylesheet" id="ctc-el-ai-prompt-generator-css" href="css/style_8.css" media="all">
+	<link rel="stylesheet" id="ctc-el-table-css" href="css/style_9.css" media="all">
+	<link rel="stylesheet" id="ctc-el-contact-information-css" href="css/style_12.css" media="all">
+	<script src="js/clipboard.js" id="ctc-clipboard-js"></script>
+	<script src="js/copy-inline.js" id="ctc-copy-inline-js"></script>
+	<script src="js/hello-frontend.min.js" id="hello-theme-frontend-js"></script>
+	<script src="js/jquery.smartmenus.min.js" id="smartmenus-js"></script>
+	<script src="js/core.js" id="ctc-blocks-core-js"></script>
+	<script src="js/script_1.js" id="ctc-el-deal-js"></script>
+	<script src="js/script.js" id="ctc-el-coupon-js"></script>
+	<script src="js/script_2.js" id="ctc-el-ai-prompt-generator-js"></script>
+	<script src="js/webpack-pro.runtime.min.js" id="elementor-pro-webpack-runtime-js"></script>
+	<script src="js/webpack.runtime.min.js" id="elementor-webpack-runtime-js"></script>
+	<script src="js/frontend-modules.min.js" id="elementor-frontend-modules-js"></script>
+	<script src="js/hooks.min.js" id="wp-hooks-js"></script>
+	<script src="js/i18n.min.js" id="wp-i18n-js"></script>
+	<script id="wp-i18n-js-after">
+		wp.i18n.setLocaleData({ 'text direction\u0004ltr': ['ltr'] });
+	</script>
+
+	<script src="js/frontend.min.js" id="elementor-pro-frontend-js"></script>
+	<script src="js/core.min.js" id="jquery-ui-core-js"></script>
+
+	<script src="js/frontend.min_1.js" id="elementor-frontend-js"></script>
+	<script src="js/elements-handlers.min.js" id="pro-elements-handlers-js"></script>
+</body>
+
+</html>
